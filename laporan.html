@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Laporan Perubahan Modal - tvMu</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/tvmu.jpeg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!img src="assets/img/logo.png" alt="">
+                    <div class="ps-2">
+                        <span class="d-none d-lg-block">Tv Muhammadiyah</span>
+                    </div>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <!-- Profile -->
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/kucing.jpeg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Jemari</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Jemari</h6>
+                            <span>Staff Accounting</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="index.html">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="dashboard.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="akun.html">
+                    <i class="bi bi-menu-button-wide"></i><span>Akun</span>
+                </a>
+            </li><!-- End Akun Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="saldo_awal.html">
+                    <i class="bi bi-currency-dollar"></i><span>Saldo Awal Tahun</span>
+                </a>
+            </li><!-- End Saldo Awal Tahun Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="transaksi.html">
+                    <i class="bi bi-cash"></i><span>Transaksi</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="jurnal.html">
+                    <i class="bi bi-book"></i><span>Jurnal</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="bukubesar.html">
+                    <i class="ri-book-2-line"></i><span>Buku Besar</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link" href="laporan.html">
+                    <i class="ri-draft-line"></i><span>LapPerubahanModal</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
+
+    </aside><!-- End Sidebar-->
+
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Laporan Perubahan Modal</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="laporan.html">LapPerubahanModal</a></li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                            </div>
+                            <!-- Table with stripped rows -->
+                            <div class="">
+                                <table class="table table-bordered" style="width: 100%;">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <th>
+                                                <div class="col-lg-6">
+                                                    <select class="col-form-label" id="nama_akun" name="nama_akun" style="border: none;" required>
+                                                        <!-- options will be populated here -->
+                                                        <option selected>Pilih Kode Akun</option>
+                                                        <option value="kas">100001 - Kas</option>
+                                                        <option value="kasbank">100002 - Kas Bank</option>
+                                                        <option value="investasi">100003 - Investasi</option>
+                                                        <option value="piutang">100100 - Piutang Klien</option>
+                                                        <option value="perlengkapan habis pakai">100200 - Perlengkapan
+                                                            habis pakai
+                                                        </option>
+                                                        <option value="peralatan produksi">100500 - Peralatan produksi
+                                                        </option>
+                                                        <option value="akumulasi depresiasi perlatan produksi">100510 -
+                                                            Akumulasi
+                                                            depresiasi perlatan produksi</option>
+                                                        <option value="tanah">100600 - Tanah</option>
+                                                        <option value="kendaraan">100700 - Kendaraan</option>
+                                                        <option value="akumulasi depresiasi kendaraan">100710 -
+                                                            Akumulasi depresiasi
+                                                            kendaraan</option>
+                                                        <option value="utang usaha">200100 - Utang usaha</option>
+                                                        <option value="utang gaji">200200 - Utang Gaji</option>
+                                                        <option value="pendapatan diterima dimuka">200300 - Pendapatan
+                                                            diterima dimuka
+                                                        </option>
+                                                        <option value="utang bank">200400 - Utang Bank</option>
+                                                        <option value="modal">300100 - Modal</option>
+                                                        <option value="deviden">300200 - Deviden</option>
+                                                        <option value="laba ditahan">300500 - Laba ditahan</option>
+                                                        <option value="pendapatan project">400100 - Pendapatan Project
+                                                        </option>
+                                                        <option value="pendapatan lain-lain">400200 - Pendapatan
+                                                            Lain-lain</option>
+                                                        <option value="beban gaji,THR,dan honorarium">500001 - Beban
+                                                            gaji, THR dan
+                                                            Honorarium</option>
+                                                        <option value="beban pemasaran">500002 - Beban Pemasaran
+                                                        </option>
+                                                        <option value="beban konsumsi">500003 - Beban Konsumsi </option>
+                                                        <option value="beban operasional projek">500004 - Beban
+                                                            Operasional Project
+                                                        </option>
+                                                        <option value="beban sewa">500005 - Beban Sewa</option>
+                                                        <option value="beban utilitas">500006 - Beban Utilitas</option>
+                                                        <option value="beban perlengkapan">500007 - Beban Perlengkapan
+                                                        </option>
+                                                        <option value="beban pemeliharaan">500008 - Beban Pemeliharaan
+                                                        </option>
+                                                        <option value="beban penyusutan peralatan produksi">500009 -
+                                                            Beban Penyusutan
+                                                            Peralatan Produksi</option>
+                                                        <option value="beban penyusutan kendaraan">500010 - Beban
+                                                            Penyusutan Kendaraan
+                                                        </option>
+                                                        <option value="beban administrasi">500011 - Beban Administrasi
+                                                        </option>
+                                                        <option value="beban sosial">500012 - Beban Sosial</option>
+                                                        <option value="beban lain-lain">500013 - Beban Lain-lain
+                                                        </option>
+                                                        <option value="beban pajak">500014 - Beban Pajak</option>
+                                                    </select>
+                                                </div>
+                                            </th>
+                                            <th><input type="text" id="selected-option" style="border: none;" class="form-control-plaintext w-75" readonly>
+                                            </th>
+                                            <script>// Get the select element and the input field
+                                                const selectElement = document.getElementById('nama_akun');
+                                                const inputField = document.getElementById('selected-option');
+
+                                                // Add an event listener to the select element
+                                                selectElement.addEventListener('change', function () {
+                                                    // Get the selected option's text
+                                                    const selectedOptionText = this.options[this.selectedIndex].text;
+
+                                                    // Extract only the text part without the code numbers
+                                                    const textOnly = selectedOptionText.split(' - ')[1];
+
+                                                    // Update the input field with the extracted text
+                                                    inputField.value = textOnly;
+                                                });
+                                            </script>
+                                            <th style="width: 10%;">Rp.</th>
+                                            <th style="width: 10%;">Rp.</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="col-lg-6">
+                                                    <select class="col-form-label" id="nama_akun" name="nama_akun" style="border: none;" required>
+                                                        <!-- options will be populated here -->
+                                                        <option selected>Pilih Kode Akun</option>
+                                                        <option value="kas">100001 - Kas</option>
+                                                        <option value="kasbank">100002 - Kas Bank</option>
+                                                        <option value="investasi">100003 - Investasi</option>
+                                                        <option value="piutang">100100 - Piutang Klien</option>
+                                                        <option value="perlengkapan habis pakai">100200 - Perlengkapan
+                                                            habis pakai
+                                                        </option>
+                                                        <option value="peralatan produksi">100500 - Peralatan produksi
+                                                        </option>
+                                                        <option value="akumulasi depresiasi perlatan produksi">100510 -
+                                                            Akumulasi
+                                                            depresiasi perlatan produksi</option>
+                                                        <option value="tanah">100600 - Tanah</option>
+                                                        <option value="kendaraan">100700 - Kendaraan</option>
+                                                        <option value="akumulasi depresiasi kendaraan">100710 -
+                                                            Akumulasi depresiasi
+                                                            kendaraan</option>
+                                                        <option value="utang usaha">200100 - Utang usaha</option>
+                                                        <option value="utang gaji">200200 - Utang Gaji</option>
+                                                        <option value="pendapatan diterima dimuka">200300 - Pendapatan
+                                                            diterima dimuka
+                                                        </option>
+                                                        <option value="utang bank">200400 - Utang Bank</option>
+                                                        <option value="modal">300100 - Modal</option>
+                                                        <option value="deviden">300200 - Deviden</option>
+                                                        <option value="laba ditahan">300500 - Laba ditahan</option>
+                                                        <option value="pendapatan project">400100 - Pendapatan Project
+                                                        </option>
+                                                        <option value="pendapatan lain-lain">400200 - Pendapatan
+                                                            Lain-lain</option>
+                                                        <option value="beban gaji,THR,dan honorarium">500001 - Beban
+                                                            gaji, THR dan
+                                                            Honorarium</option>
+                                                        <option value="beban pemasaran">500002 - Beban Pemasaran
+                                                        </option>
+                                                        <option value="beban konsumsi">500003 - Beban Konsumsi </option>
+                                                        <option value="beban operasional projek">500004 - Beban
+                                                            Operasional Project
+                                                        </option>
+                                                        <option value="beban sewa">500005 - Beban Sewa</option>
+                                                        <option value="beban utilitas">500006 - Beban Utilitas</option>
+                                                        <option value="beban perlengkapan">500007 - Beban Perlengkapan
+                                                        </option>
+                                                        <option value="beban pemeliharaan">500008 - Beban Pemeliharaan
+                                                        </option>
+                                                        <option value="beban penyusutan peralatan produksi">500009 -
+                                                            Beban Penyusutan
+                                                            Peralatan Produksi</option>
+                                                        <option value="beban penyusutan kendaraan">500010 - Beban
+                                                            Penyusutan Kendaraan
+                                                        </option>
+                                                        <option value="beban administrasi">500011 - Beban Administrasi
+                                                        </option>
+                                                        <option value="beban sosial">500012 - Beban Sosial</option>
+                                                        <option value="beban lain-lain">500013 - Beban Lain-lain
+                                                        </option>
+                                                        <option value="beban pajak">500014 - Beban Pajak</option>
+                                                    </select>
+                                                </div>
+                                            </th>
+                                            <th>Setoran Modal selama periode berjalan</th>
+                                            <th style="width: 10%;">Rp.</th>
+                                            <th style="width: 10%;">Rp.</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                <div class="col-lg-6">
+                                                    <blank></blank>
+                                                </div>
+                                            </th>
+                                            <th>Saldo Modal</th>
+                                            <th style="width: 10%;">Rp.</th>
+                                            <th style="width: 10%;">Rp.</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                Laba Ditahan
+                                            </th>
+                                            <th>
+                                                <blank></blank>
+                                            </th>
+                                            <th style="width: 10%;">
+                                                <blank></blank>
+                                            </th>
+                                            <th style="width: 10%;">
+                                                <blank></blank>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="col-lg-6">
+                                                    <blank></blank>
+                                                </div>
+                                            </th>
+                                            <th>Saldo Modal</th>
+                                            <th style="width: 10%;">Rp.</th>
+                                            <th style="width: 10%;">Rp.</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Rp404.914.955</td>
+                                            <td>Rp404.914.955</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table" style="width: 60%;">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-primary">Kas</th>
+                                            <th class="table-primary">Debit</th>
+                                            <th class="table-primary">Kredit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Saldo Awal</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total JU</td>
+                                            <td>Rp2.554.920.655</td>
+                                            <td>Rp2.150.005.700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total AJP</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total JP</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total JB</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="table-primary" data-type="date" data-format="DD/MM/YYYY">Tanggal</th>
+                                        <th class="table-primary">Kode Jurnal</th>
+                                        <th class="table-primary">Kode Akun</th>
+                                        <th class="table-primary">Nama Akun</th>
+                                        <th class="table-primary">Arus Kas</th>
+                                        <th class="table-primary">Debit/Kredit</th>
+                                        <th class="table-primary">Nominal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Rp8.000.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Rp20.100.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Rp3.250.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Rp6.750.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>3.750.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>12.200.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>4.000.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>7.250.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2.000.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2.000.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2.500.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">JU</td>
+                                        <td>400100</td>
+                                        <td>Pendapatan Project</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>3.000.0000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- End Table with stripped rows -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <nav class="d-flex justify-content-center">
+            <div class="copyright">
+                &copy; Copyright <strong><span>tvMu</span></strong>. All Rights Reserved Designed by <a
+                    href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+
+            </div>
+        </nav>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
