@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Jurnal - tvMu</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/tvmu.jpeg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!img src="assets/img/logo.png" alt="">
+                    <div class="ps-2">
+                        <span class="d-none d-lg-block">Tv Muhammadiyah</span>
+                    </div>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <!-- Profile -->
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/kucing.jpeg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Jemari</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Jemari</h6>
+                            <span>Staff Accounting</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="login.html">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="dashboard.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="akun.html">
+                    <i class="bi bi-menu-button-wide"></i><span>Akun</span>
+                </a>
+            </li><!-- End Akun Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="saldo_awal.html">
+                    <i class="bi bi-currency-dollar"></i><span>Saldo Awal Tahun</span>
+                </a>
+            </li><!-- End Saldo Awal Tahun Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link" href="transaksi.html">
+                    <i class="bi bi-cart"></i><span>Transaksi</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="jurnal.html">
+                    <i class="bi bi-book"></i><span>Jurnal</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="bukubesar.html">
+                    <i class="ri-book-2-line"></i><span>Buku Besar</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
+
+    </aside><!-- End Sidebar-->
+
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Transaksi</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="transaksi.html">Transaksi</a></li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="tambah.html"><button type="submit" class="btn btn-primary">Tambah
+                                        Transaksi</button></a>
+                            </div>
+                            <hr>
+                            <!-- Table with stripped rows -->
+                            <table class="table datatable">
+                                <thead>
+                                    <tr>
+                                        <th data-type="date" data-format="DD/MM/YYYY">Tanggal</th>
+                                        <th>Transaksi</th>
+                                        <th>Nominal</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01/01/2023</td>
+                                        <td>Pembelian Makan dan Minum 31 Desember 2023</td>
+                                        <td>Rp124.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="update.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/01/2023</td>
+                                        <td>Pembelian Makanan</td>
+                                        <td>Rp30.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>03/01/2023</td>
+                                        <td>Zoom Teleconference</td>
+                                        <td>Rp268.108</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>05/01/2023</td>
+                                        <td>Musik Stasiun IDTvMu</td>
+                                        <td>Rp128.791</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>07/01/2023</td>
+                                        <td>Gula Sachet, Le Minerale, Makan, Snack dan Snack Box</td>
+                                        <td>Rp251.700</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/01/2023</td>
+                                        <td>Feesible Jenius</td>
+                                        <td>Rp10.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>09/01/2023</td>
+                                        <td>Snack Pelepasan Magang, Makan</td>
+                                        <td>Rp290.500</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>10/01/2023</td>
+                                        <td>Makan Pelepasan</td>
+                                        <td>Rp204.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11/01/2023</td>
+                                        <td>Snack Pelepasan Magang</td>
+                                        <td>Rp50.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12/01/2023</td>
+                                        <td>Makan dan Servis Zhiyun</td>
+                                        <td>Rp165.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12/01/2023</td>
+                                        <td>Makan dan Service Zhiyun</td>
+                                        <td>Rp1.582.500</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>13/01/2023</td>
+                                        <td>Catridge Printer</td>
+                                        <td>Rp1.618.712</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>13/01/2023</td>
+                                        <td>Makan dan Pulsa Admin Info</td>
+                                        <td>Rp181.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Makan dan Pulsa Admin Info</td>
+                                        <td>Rp101.500</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Video Profil UGM</td>
+                                        <td>Rp9.057.467</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Video Profil UGM</td>
+                                        <td>Rp1.000.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Video Profil UGM</td>
+                                        <td>Rp1.348.507</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Pengajian Milad Ke-62 UAD, Sound System Lighting Taman Artistik</td>
+                                        <td>Rp31.597.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Pengajian Milad Ke-62 UAD, Sound System Lighting Taman Artistik</td>
+                                        <td>Rp1.000.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Pengajian Milad Ke-62 UAD, Sound System Lighting Taman Artistik </td>
+                                        <td>Rp1.520.600</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Backdrop dan Sound System Lomba Mancing Asik Bergembira</td>
+                                        <td>Rp3.950.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Backdrop dan Sound System Lomba Mancing Asik Bergembira</td>
+                                        <td>Rp500.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Backdrop dan Sound System Lomba Mancing Asik Bergembira</td>
+                                        <td>Rp410.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Backdrop Pameran Program Hilirisasi Penelitian dan Pengabdiab + Sound</td>
+                                        <td>Rp8.148.500</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Backdrop Pameran Program Hilirisasi Penelitian dan Pengabdiab + Sound</td>
+                                        <td>Rp700.000</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16/01/2023</td>
+                                        <td>Backdrop Pameran Program Hilirisasi Penelitian dan Pengabdiab + Sound</td>
+                                        <td>Rp930.300</td>
+                                        <td>
+                                            <section class="section">
+                                                <div>
+                                                    <div class="d-flex justify-content-start">
+                                                        <a href="hapusdata.html"><button type="button"
+                                                                class="btn flex-grow-1 mr-2"><i
+                                                                    class="bi bi-trash3-fill"></i></button></a>
+                                                        <a href="updatetransaksi.html"><button type="button"
+                                                                class="btn flex-grow-1 ml-2"><i
+                                                                    class="bi bi-pencil-square"></i></button></a>
+                                                    </div>
+                                                </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- End Table with stripped rows -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <nav class="d-flex justify-content-center">
+            <div class="copyright">
+                &copy; Copyright <strong><span>tvMu</span></strong>. All Rights Reserved Designed by <a
+                    href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+
+            </div>
+        </nav>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
