@@ -205,155 +205,152 @@
                                     <tbody>
 
                                         <tr>
-                                            <th>
+                                            <th> 
+                                                <!-- ini bagian pilihan -->
                                                 <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun" name="nama_akun" style="border: none;" required>
+                                                    <select class="col-form-label" id="nama_akun" name="nama_akun"
+                                                        style="border: none;" required>
                                                         <!-- options will be populated here -->
                                                         <option selected>Pilih Kode Akun</option>
-                                                        <option value="kas">100001 - Kas</option>
-                                                        <option value="kasbank">100002 - Kas Bank</option>
-                                                        <option value="investasi">100003 - Investasi</option>
-                                                        <option value="piutang">100100 - Piutang Klien</option>
-                                                        <option value="perlengkapan habis pakai">100200 - Perlengkapan
-                                                            habis pakai
-                                                        </option>
-                                                        <option value="peralatan produksi">100500 - Peralatan produksi
-                                                        </option>
-                                                        <option value="akumulasi depresiasi perlatan produksi">100510 -
-                                                            Akumulasi
-                                                            depresiasi perlatan produksi</option>
-                                                        <option value="tanah">100600 - Tanah</option>
-                                                        <option value="kendaraan">100700 - Kendaraan</option>
-                                                        <option value="akumulasi depresiasi kendaraan">100710 -
-                                                            Akumulasi depresiasi
-                                                            kendaraan</option>
-                                                        <option value="utang usaha">200100 - Utang usaha</option>
-                                                        <option value="utang gaji">200200 - Utang Gaji</option>
-                                                        <option value="pendapatan diterima dimuka">200300 - Pendapatan
-                                                            diterima dimuka
-                                                        </option>
-                                                        <option value="utang bank">200400 - Utang Bank</option>
-                                                        <option value="modal">300100 - Modal</option>
-                                                        <option value="deviden">300200 - Deviden</option>
-                                                        <option value="laba ditahan">300500 - Laba ditahan</option>
-                                                        <option value="pendapatan project">400100 - Pendapatan Project
-                                                        </option>
-                                                        <option value="pendapatan lain-lain">400200 - Pendapatan
-                                                            Lain-lain</option>
-                                                        <option value="beban gaji,THR,dan honorarium">500001 - Beban
-                                                            gaji, THR dan
-                                                            Honorarium</option>
-                                                        <option value="beban pemasaran">500002 - Beban Pemasaran
-                                                        </option>
-                                                        <option value="beban konsumsi">500003 - Beban Konsumsi </option>
-                                                        <option value="beban operasional projek">500004 - Beban
-                                                            Operasional Project
-                                                        </option>
-                                                        <option value="beban sewa">500005 - Beban Sewa</option>
-                                                        <option value="beban utilitas">500006 - Beban Utilitas</option>
-                                                        <option value="beban perlengkapan">500007 - Beban Perlengkapan
-                                                        </option>
-                                                        <option value="beban pemeliharaan">500008 - Beban Pemeliharaan
-                                                        </option>
-                                                        <option value="beban penyusutan peralatan produksi">500009 -
-                                                            Beban Penyusutan
-                                                            Peralatan Produksi</option>
-                                                        <option value="beban penyusutan kendaraan">500010 - Beban
-                                                            Penyusutan Kendaraan
-                                                        </option>
-                                                        <option value="beban administrasi">500011 - Beban Administrasi
-                                                        </option>
-                                                        <option value="beban sosial">500012 - Beban Sosial</option>
-                                                        <option value="beban lain-lain">500013 - Beban Lain-lain
-                                                        </option>
-                                                        <option value="beban pajak">500014 - Beban Pajak</option>
+                                                        <option value="100001">100001</option>
+                                                        <option value="100002">100002</option>
+                                                        <option value="100003">100003</option>
+                                                        <option value="100100">100100</option>
+                                                        <option value="100200">100200</option>
+                                                        <option value="100500">100500</option>
+                                                        <option value="100510">100510</option>
+                                                        <option value="100600">100600</option>
+                                                        <option value="100700">100700</option>
+                                                        <option value="100710">100710</option>
+                                                        <option value="200100">200100</option>
+                                                        <option value="200200">200200</option>
+                                                        <option value="200300">200300</option>
+                                                        <option value="200400">200400</option>
+                                                        <option value="300100">300100</option>
+                                                        <option value="300200">300200</option>
+                                                        <option value="300500">300500</option>
+                                                        <option value="400100">400100</option>
+                                                        <option value="400200">400200</option>
+                                                        <option value="500001">500001</option>
+                                                        <option value="500002">500002</option>
+                                                        <option value="500003">500003</option>
+                                                        <option value="500004">500004</option>
+                                                        <option value="500005">500005</option>
+                                                        <option value="500006">500006</option>
+                                                        <option value="500007">500007</option>
+                                                        <option value="500008">500008</option>
+                                                        <option value="500009">500009</option>
+                                                        <option value="500010">500010</option>
+                                                        <option value="500011">500011</option>
+                                                        <option value="500012">500012</option>
+                                                        <option value="500013">500013</option>
+                                                        <option value="500014">500014</option>
                                                     </select>
                                                 </div>
                                             </th>
-                                            <th><input type="text" id="selected-option" style="border: none;" class="form-control-plaintext w-75" readonly>
+                                            <th>
+                                                <!-- bagian input pilihan -->
+                                                <input type="text" id="selected-option" style="border: none;"
+                                                    class="form-control-plaintext w-75" readonly>
                                             </th>
-                                            <script>// Get the select element and the input field
+                                            <script>
+                                                // Get the select element and the input field
                                                 const selectElement = document.getElementById('nama_akun');
                                                 const inputField = document.getElementById('selected-option');
 
+                                                // Create an object to map codes to account names
+                                                const accountNames = {
+                                                    '100001': 'Kas',
+                                                    '100002': 'Kas Bank',
+                                                    '100003': 'Investasi',
+                                                    '100100': 'Piutang Klien',
+                                                    '100200': 'Perlengkapan habis pakai',
+                                                    '100500': 'Peralatan produksi',
+                                                    '100510': 'Akumulasi depresiasi perlatan produksi',
+                                                    '100600': 'Tanah',
+                                                    '100700': 'Kendaraan',
+                                                    '100710': 'Akumulasi depresiasi kendaraan',
+                                                    '200100': 'Utang usaha',
+                                                    '200200': 'Utang Gaji',
+                                                    '200300': 'Pendapatan diterima dimuka',
+                                                    '200400': 'Utang Bank',
+                                                    '300100': 'Modal',
+                                                    '300200': 'Deviden',
+                                                    '300500': 'Laba ditahan',
+                                                    '400100': 'Pendapatan Project',
+                                                    '400200': 'Pendapatan Lain-lain',
+                                                    '500001': 'Beban gaji, THR dan Honorarium',
+                                                    '500002': 'Beban Pemasaran',
+                                                    '500003': 'Beban Konsumsi',
+                                                    '500004': 'Beban Operasional Project',
+                                                    '500005': 'Beban Sewa',
+                                                    '500006': 'Beban Utilitas',
+                                                    '500007': 'Beban Perlengkapan',
+                                                    '500008': 'Beban Pemeliharaan',
+                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
+                                                    '500010': 'Beban Penyusutan Kendaraan',
+                                                    '500011': 'Beban Administrasi',
+                                                    '500012': 'Beban Sosial',
+                                                    '500013': 'Beban Lain-lain',
+                                                    '500014': 'Beban Pajak'
+                                                };
+
                                                 // Add an event listener to the select element
                                                 selectElement.addEventListener('change', function () {
-                                                    // Get the selected option's text
-                                                    const selectedOptionText = this.options[this.selectedIndex].text;
+                                                    // Get the selected option's value (code)
+                                                    const selectedCode = this.value;
 
-                                                    // Extract only the text part without the code numbers
-                                                    const textOnly = selectedOptionText.split(' - ')[1];
+                                                    // Get the corresponding account name from the object
+                                                    const accountName = accountNames[selectedCode];
 
-                                                    // Update the input field with the extracted text
-                                                    inputField.value = textOnly;
+                                                    // Update the input field with the account name
+                                                    inputField.value = accountName;
                                                 });
                                             </script>
+                                            <!-- akhir pilihan -->
                                             <th style="width: 10%;">Rp.</th>
                                             <th style="width: 10%;">Rp.</th>
                                         </tr>
                                         <tr>
                                             <th>
                                                 <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun" name="nama_akun" style="border: none;" required>
+                                                    <select class="col-form-label" id="nama_akun" name="nama_akun"
+                                                        style="border: none;" required>
                                                         <!-- options will be populated here -->
                                                         <option selected>Pilih Kode Akun</option>
-                                                        <option value="kas">100001 - Kas</option>
-                                                        <option value="kasbank">100002 - Kas Bank</option>
-                                                        <option value="investasi">100003 - Investasi</option>
-                                                        <option value="piutang">100100 - Piutang Klien</option>
-                                                        <option value="perlengkapan habis pakai">100200 - Perlengkapan
-                                                            habis pakai
-                                                        </option>
-                                                        <option value="peralatan produksi">100500 - Peralatan produksi
-                                                        </option>
-                                                        <option value="akumulasi depresiasi perlatan produksi">100510 -
-                                                            Akumulasi
-                                                            depresiasi perlatan produksi</option>
-                                                        <option value="tanah">100600 - Tanah</option>
-                                                        <option value="kendaraan">100700 - Kendaraan</option>
-                                                        <option value="akumulasi depresiasi kendaraan">100710 -
-                                                            Akumulasi depresiasi
-                                                            kendaraan</option>
-                                                        <option value="utang usaha">200100 - Utang usaha</option>
-                                                        <option value="utang gaji">200200 - Utang Gaji</option>
-                                                        <option value="pendapatan diterima dimuka">200300 - Pendapatan
-                                                            diterima dimuka
-                                                        </option>
-                                                        <option value="utang bank">200400 - Utang Bank</option>
-                                                        <option value="modal">300100 - Modal</option>
-                                                        <option value="deviden">300200 - Deviden</option>
-                                                        <option value="laba ditahan">300500 - Laba ditahan</option>
-                                                        <option value="pendapatan project">400100 - Pendapatan Project
-                                                        </option>
-                                                        <option value="pendapatan lain-lain">400200 - Pendapatan
-                                                            Lain-lain</option>
-                                                        <option value="beban gaji,THR,dan honorarium">500001 - Beban
-                                                            gaji, THR dan
-                                                            Honorarium</option>
-                                                        <option value="beban pemasaran">500002 - Beban Pemasaran
-                                                        </option>
-                                                        <option value="beban konsumsi">500003 - Beban Konsumsi </option>
-                                                        <option value="beban operasional projek">500004 - Beban
-                                                            Operasional Project
-                                                        </option>
-                                                        <option value="beban sewa">500005 - Beban Sewa</option>
-                                                        <option value="beban utilitas">500006 - Beban Utilitas</option>
-                                                        <option value="beban perlengkapan">500007 - Beban Perlengkapan
-                                                        </option>
-                                                        <option value="beban pemeliharaan">500008 - Beban Pemeliharaan
-                                                        </option>
-                                                        <option value="beban penyusutan peralatan produksi">500009 -
-                                                            Beban Penyusutan
-                                                            Peralatan Produksi</option>
-                                                        <option value="beban penyusutan kendaraan">500010 - Beban
-                                                            Penyusutan Kendaraan
-                                                        </option>
-                                                        <option value="beban administrasi">500011 - Beban Administrasi
-                                                        </option>
-                                                        <option value="beban sosial">500012 - Beban Sosial</option>
-                                                        <option value="beban lain-lain">500013 - Beban Lain-lain
-                                                        </option>
-                                                        <option value="beban pajak">500014 - Beban Pajak</option>
+                                                        <option value="100001">100001</option>
+                                                        <option value="100002">100002</option>
+                                                        <option value="100003">100003</option>
+                                                        <option value="100100">100100</option>
+                                                        <option value="100200">100200</option>
+                                                        <option value="100500">100500</option>
+                                                        <option value="100510">100510</option>
+                                                        <option value="100600">100600</option>
+                                                        <option value="100700">100700</option>
+                                                        <option value="100710">100710</option>
+                                                        <option value="200100">200100</option>
+                                                        <option value="200200">200200</option>
+                                                        <option value="200300">200300</option>
+                                                        <option value="200400">200400</option>
+                                                        <option value="300100">300100</option>
+                                                        <option value="300200">300200</option>
+                                                        <option value="300500">300500</option>
+                                                        <option value="400100">400100</option>
+                                                        <option value="400200">400200</option>
+                                                        <option value="500001">500001</option>
+                                                        <option value="500002">500002</option>
+                                                        <option value="500003">500003</option>
+                                                        <option value="500004">500004</option>
+                                                        <option value="500005">500005</option>
+                                                        <option value="500006">500006</option>
+                                                        <option value="500007">500007</option>
+                                                        <option value="500008">500008</option>
+                                                        <option value="500009">500009</option>
+                                                        <option value="500010">500010</option>
+                                                        <option value="500011">500011</option>
+                                                        <option value="500012">500012</option>
+                                                        <option value="500013">500013</option>
+                                                        <option value="500014">500014</option>
                                                     </select>
                                                 </div>
                                             </th>
@@ -393,7 +390,7 @@
                                                     <blank></blank>
                                                 </div>
                                             </th>
-                                            <th>Saldo Modal</th>
+                                            <th>Saldo Awal Periode</th>
                                             <th style="width: 10%;">Rp.</th>
                                             <th style="width: 10%;">Rp.</th>
                                         </tr>
