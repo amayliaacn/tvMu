@@ -198,12 +198,10 @@
                             <div class="card-title">
                             </div>
                             <!-- Table with stripped rows -->
-                            <div class="">
                                 <table class="table table-bordered" style="width: 100%;">
                                     <thead>
                                     </thead>
                                     <tbody>
-
                                         <tr>
                                             <th> 
                                                 <!-- ini bagian pilihan -->
@@ -251,7 +249,7 @@
                                             <th>
                                                 <!-- bagian input pilihan -->
                                                 <input type="text" id="selected-option" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
+                                                    class="form-control-plaintext" readonly>
                                             </th>
                                             <script>
                                                 // Get the select element and the input field
@@ -307,12 +305,13 @@
                                                     inputField.value = accountName;
                                                 });
                                             </script>
-                                            <!-- akhir pilihan -->
-                                            <th style="width: 10%;">Rp.</th>
-                                            <th style="width: 10%;">Rp.</th>
+                                            <!-- font-weight agar tidak bold -->
+                                            <th style="width: 20%; font-weight: normal;">Rp-</th>
+                                            <th style="width: 20%; font-weight: normal;"><blank></blank></th>
                                         </tr>
                                         <tr>
-                                            <th>
+                                            <th> 
+                                                <!-- ini bagian pilihan -->
                                                 <div class="col-lg-6">
                                                     <select class="col-form-label" id="nama_akun" name="nama_akun"
                                                         style="border: none;" required>
@@ -354,9 +353,9 @@
                                                     </select>
                                                 </div>
                                             </th>
-                                            <th>Setoran Modal selama periode berjalan</th>
-                                            <th style="width: 10%;">Rp.</th>
-                                            <th style="width: 10%;">Rp.</th>
+                                            <th style="width: 60%;font-weight: normal;">Setoran Modal selama periode berjalan</th>
+                                            <th style="width: 20%;font-weight: normal;">Rp2.150.005.700</th>
+                                            <th style="width: 20%;font-weight: normal;"><blank></blank></th>
                                         </tr>
 
                                         <tr>
@@ -365,9 +364,9 @@
                                                     <blank></blank>
                                                 </div>
                                             </th>
-                                            <th>Saldo Modal</th>
-                                            <th style="width: 10%;">Rp.</th>
-                                            <th style="width: 10%;">Rp.</th>
+                                            <th style="font-weight: normal;">Saldo Modal</th>
+                                            <th style="width: 20%;"><blank></blank></blank></th>
+                                            <th style="width: 20%;">Rp2.150.005.700</th>
                                         </tr>
 
                                         <tr>
@@ -377,12 +376,21 @@
                                             <th>
                                                 <blank></blank>
                                             </th>
-                                            <th style="width: 10%;">
+                                            <th style="width: 10%;font-weight: normal;">
                                                 <blank></blank>
                                             </th>
-                                            <th style="width: 10%;">
+                                            <th style="width: 10%;font-weight: normal;">
                                                 <blank></blank>
                                             </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="col-lg-6">
+                                                </div>
+                                            </th>
+                                            <th style="font-weight: normal;">Saldo Awal Periode</th>
+                                            <th style="width: 20%;"><blank></blank></blank></th>
+                                            <th style="width: 20%;"><blank></blank></th>
                                         </tr>
                                         <tr>
                                             <th>
@@ -390,190 +398,150 @@
                                                     <blank></blank>
                                                 </div>
                                             </th>
-                                            <th>Saldo Awal Periode</th>
-                                            <th style="width: 10%;">Rp.</th>
-                                            <th style="width: 10%;">Rp.</th>
+                                            <th style="font-weight: normal;">Laba(rugi) tahun berjalan</th>
+                                            <th style="width: 20%;font-weight: normal;">Rp-</th>
+                                            <th style="width: 20%;font-weight: normal;"></th>
                                         </tr>
                                         <tr>
-                                            <td>Rp404.914.955</td>
-                                            <td>Rp404.914.955</td>
+                                            <th> 
+                                                <!-- ini bagian pilihan -->
+                                                <div class="col-lg-6">
+                                                    <select class="col-form-label" id="nama_akun1" name="nama_akun1"
+                                                        style="border: none;" required>
+                                                        <!-- options will be populated here -->
+                                                        <option selected>Pilih Kode Akun</option>
+                                                        <option value="100001">100001</option>
+                                                        <option value="100002">100002</option>
+                                                        <option value="100003">100003</option>
+                                                        <option value="100100">100100</option>
+                                                        <option value="100200">100200</option>
+                                                        <option value="100500">100500</option>
+                                                        <option value="100510">100510</option>
+                                                        <option value="100600">100600</option>
+                                                        <option value="100700">100700</option>
+                                                        <option value="100710">100710</option>
+                                                        <option value="200100">200100</option>
+                                                        <option value="200200">200200</option>
+                                                        <option value="200300">200300</option>
+                                                        <option value="200400">200400</option>
+                                                        <option value="300100">300100</option>
+                                                        <option value="300200">300200</option>
+                                                        <option value="300500">300500</option>
+                                                        <option value="400100">400100</option>
+                                                        <option value="400200">400200</option>
+                                                        <option value="500001">500001</option>
+                                                        <option value="500002">500002</option>
+                                                        <option value="500003">500003</option>
+                                                        <option value="500004">500004</option>
+                                                        <option value="500005">500005</option>
+                                                        <option value="500006">500006</option>
+                                                        <option value="500007">500007</option>
+                                                        <option value="500008">500008</option>
+                                                        <option value="500009">500009</option>
+                                                        <option value="500010">500010</option>
+                                                        <option value="500011">500011</option>
+                                                        <option value="500012">500012</option>
+                                                        <option value="500013">500013</option>
+                                                        <option value="500014">500014</option>
+                                                    </select>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <!-- bagian input pilihan -->
+                                                <input type="text" id="selected-option1" style="border: none;"
+                                                    class="form-control-plaintext" readonly>
+                                            </th>
+                                            <script>
+                                                // Get the select element and the input field
+                                                const selectElement1 = document.getElementById('nama_akun1');
+                                                const inputField1 = document.getElementById('selected-option1');
+
+                                                // Create an object to map codes to account names
+                                                const accountNames1 = {
+                                                    '100001': 'Kas',
+                                                    '100002': 'Kas Bank',
+                                                    '100003': 'Investasi',
+                                                    '100100': 'Piutang Klien',
+                                                    '100200': 'Perlengkapan habis pakai',
+                                                    '100500': 'Peralatan produksi',
+                                                    '100510': 'Akumulasi depresiasi perlatan produksi',
+                                                    '100600': 'Tanah',
+                                                    '100700': 'Kendaraan',
+                                                    '100710': 'Akumulasi depresiasi kendaraan',
+                                                    '200100': 'Utang usaha',
+                                                    '200200': 'Utang Gaji',
+                                                    '200300': 'Pendapatan diterima dimuka',
+                                                    '200400': 'Utang Bank',
+                                                    '300100': 'Modal',
+                                                    '300200': 'Deviden',
+                                                    '300500': 'Laba ditahan',
+                                                    '400100': 'Pendapatan Project',
+                                                    '400200': 'Pendapatan Lain-lain',
+                                                    '500001': 'Beban gaji, THR dan Honorarium',
+                                                    '500002': 'Beban Pemasaran',
+                                                    '500003': 'Beban Konsumsi',
+                                                    '500004': 'Beban Operasional Project',
+                                                    '500005': 'Beban Sewa',
+                                                    '500006': 'Beban Utilitas',
+                                                    '500007': 'Beban Perlengkapan',
+                                                    '500008': 'Beban Pemeliharaan',
+                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
+                                                    '500010': 'Beban Penyusutan Kendaraan',
+                                                    '500011': 'Beban Administrasi',
+                                                    '500012': 'Beban Sosial',
+                                                    '500013': 'Beban Lain-lain',
+                                                    '500014': 'Beban Pajak'
+                                                };
+
+                                                // Add an event listener to the select element
+                                                selectElement1.addEventListener('change', function () {
+                                                    // Get the selected option's value (code)
+                                                    const selectedCode1 = this.value;
+
+                                                    // Get the corresponding account name from the object
+                                                    const accountName1 = accountNames1[selectedCode1];
+
+                                                    // Update the input field with the account name
+                                                    inputField1.value = accountName1;
+                                                });
+                                            </script>
+                                            <th style="width: 20%;font-weight: normal;">-Rp404.914.955</th>
+                                            <th style="width: 20px;"><blank></blank></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="col-lg-6">
+                                                    <blank></blank>
+                                                </div>
+                                            </th>
+                                            <th style="font-weight: normal;">Saldo laba ditahan</th>
+                                            <th style="width: 20%;font-weight: normal;"><blank></blank></th>
+                                            <th style="width: 20%;">-Rp404.914.955</th>
+                                        </tr>
+                                        <tr class="col-lg-12" style="height:42px;">
+                                            <th>
+                                                <div class="col-lg-6">
+                                                    <blank></blank>
+                                                </div>
+                                            </th>
+                                            <th><blank></blank></th>
+                                            <th style="width: 20%;font-weight: normal;"><blank></blank></th>
+                                            <th style="width: 20%;font-weight: normal;"><blank></blank></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="col-lg-6">
+                                                    <blank></blank>
+                                                </div>
+                                            </th>
+                                            <th sty>Ekuitas per 31 Desember 2023</th>
+                                            <th style="width: 20%;"><blank></blank></th>
+                                            <th style="width: 20%;">Rp1.745.090.745</th>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <table class="table" style="width: 60%;">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-primary">Kas</th>
-                                            <th class="table-primary">Debit</th>
-                                            <th class="table-primary">Kredit</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Saldo Awal</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total JU</td>
-                                            <td>Rp2.554.920.655</td>
-                                            <td>Rp2.150.005.700</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total AJP</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total JP</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total JB</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th class="table-primary" data-type="date" data-format="DD/MM/YYYY">Tanggal</th>
-                                        <th class="table-primary">Kode Jurnal</th>
-                                        <th class="table-primary">Kode Akun</th>
-                                        <th class="table-primary">Nama Akun</th>
-                                        <th class="table-primary">Arus Kas</th>
-                                        <th class="table-primary">Debit/Kredit</th>
-                                        <th class="table-primary">Nominal</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp8.000.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp20.100.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp3.250.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp6.750.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>3.750.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>12.200.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>4.000.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>7.250.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>2.000.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>2.000.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>2.500.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-center">JU</td>
-                                        <td>400100</td>
-                                        <td>Pendapatan Project</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>3.000.0000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
 
                             <!-- End Table with stripped rows -->
-                        </div>
                     </div>
                 </div>
             </div>
