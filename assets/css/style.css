@@ -840,6 +840,11 @@ h6 {
   background: #ffecdf;
 }
 
+.dashboard .deviden-card .card-icon {
+  color: #ff0055;
+  background: #ffe6f2;
+}
+
 /* Activity */
 .dashboard .activity {
   font-size: 14px;
