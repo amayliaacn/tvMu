@@ -15,7 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,8 +49,8 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!img src="assets/img/tvmu.jpeg" alt="">
           <div class="ps-2">
-        <span class="d-none d-lg-block">Tv Muhammadiyah</span>
-      </div>
+            <span class="d-none d-lg-block">Tv Muhammadiyah</span>
+          </div>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -108,49 +110,49 @@
 
   </header><!-- End Header -->
 
-   <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
 
-        <ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav" id="sidebar-nav">
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="dashboard.html">
-                    <i class="bi bi-grid"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="akun.html">
-                    <i class="bi bi-menu-button-wide"></i><span>Akun</span>
-                </a>
-            </li><!-- End Akun Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="akun.html">
+          <i class="bi bi-menu-button-wide"></i><span>Akun</span>
+        </a>
+      </li><!-- End Akun Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link" href="saldo_awal.html">
-                    <i class="bi bi-currency-dollar"></i><span>Saldo Awal Tahun</span>
-                </a>
-            </li><!-- End Saldo Awal Tahun Nav -->
+      <li class="nav-item">
+        <a class="nav-link" href="saldo_awal.html">
+          <i class="bi bi-currency-dollar"></i><span>Saldo Awal Tahun</span>
+        </a>
+      </li><!-- End Saldo Awal Tahun Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="transaksi.html">
-                    <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="transaksi.html">
+          <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
+        </a>
+      </li><!-- End Jurnal Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="bukubesar.html">
-                    <i class="ri-book-2-line"></i><span>Buku Besar</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="bukubesar.html">
+          <i class="ri-book-2-line"></i><span>Buku Besar</span>
+        </a>
+      </li><!-- End Jurnal Nav -->
 
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="lapkeuangan.html">
-                  <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
-              </a>
-          </li><!-- End Laporan keuangan -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="lapkeuangan.html">
+          <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
+        </a>
+      </li><!-- End Laporan keuangan -->
 
-    </aside><!-- End Sidebar-->
+  </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
 
@@ -159,8 +161,8 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-          <li class="breadcrumb-item"><a href ="saldo_awal.html">Saldo Awal Tahun</a></li>
-          <li class="breadcrumb-item"><a href ="detail.html">Detail Periode Akuntansi</a></li>
+          <li class="breadcrumb-item"><a href="saldo_awal.html">Saldo Awal Tahun</a></li>
+          <li class="breadcrumb-item"><a href="detail.html">Detail Periode Akuntansi</a></li>
           <li class="breadcrumb-item active">Update Periode Akuntansi</li>
         </ol>
       </nav>
@@ -174,114 +176,118 @@
               <h5 class="card-title">Update Periode Akuntansi</h5>
 
               <!-- Horizontal Form -->
-               <form>
+              <form>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Kode Akun /Nama Akun</label>
                   <div class="col-sm-8">
-                     <select class="form-control" id="nama_akun" name="nama_akun" required >
-                          <!-- options will be populated here -->
-                          <option value="kas">100001 - Kas</option>
-                          <option selected">100002 - Kas Bank</option>
-                          <option value="investasi">100003 - Investasi</option>
-                          <option value="piutang">100100 - Piutang Klien</option>
-                          <option value="perlengkapan habis pakai">100200 - Perlengkapan habis pakai</option>
-                          <option value="peralatan produksi">100500 - Peralatan produksi</option>
-                          <option value="akumulasi depresiasi perlatan produksi">100510 - Akumulasi depresiasi perlatan produksi</option>
-                          <option value="tanah">100600 - Tanah</option>
-                          <option value="kendaraan">100700 - Kendaraan</option>
-                          <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi depresiasi kendaraan</option>
-                          <option value="utang usaha">200100 - Utang usaha</option>
-                          <option value="utang gaji">200200 - Utang Gaji</option>
-                          <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima dimuka</option>
-                          <option value="utang bank">200400 - Utang Bank</option>
-                          <option value="modal">300100 - Modal</option>
-                          <option value="deviden">300200 - Deviden</option>
-                          <option value="laba ditahan">300500 - Laba ditahan</option>
-                          <option value="pendapatan project">400100 - Pendapatan Project</option>
-                          <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain</option>
-                          <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR dan Honorarium</option>
-                          <option value="beban pemasaran">500002 - Beban Pemasaran</option>
-                          <option value="beban konsumsi">500003 - Beban Konsumsi </option>
-                          <option value="beban operasional projek">500004 - Beban Operasional Project</option>
-                          <option value="beban sewa">500005 - Beban Sewa</option>
-                          <option value="beban utilitas">500006 - Beban Utilitas</option>
-                          <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
-                          <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
-                          <option value="beban penyusutan peralatan produksi">500009 - Beban Penyusutan Peralatan Produksi</option>
-                          <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan Kendaraan</option>
-                          <option value="beban administrasi">500011 - Beban Administrasi</option>
-                          <option value="beban sosial">500012 - Beban Sosial</option>
-                          <option value="beban lain-lain">500013 - Beban Lain-lain</option>
-                          <option value="beban pajak">500014 - Beban Pajak</option>
-                        </select>
+                    <select class="form-control" id="nama_akun" name="nama_akun" required>
+                      <!-- options will be populated here -->
+                      <option value="kas">100001 - Kas</option>
+                      <option selected">100002 - Kas Bank</option>
+                      <option value="investasi">100003 - Investasi</option>
+                      <option value="piutang">100100 - Piutang Klien</option>
+                      <option value="perlengkapan habis pakai">100200 - Perlengkapan habis pakai</option>
+                      <option value="peralatan produksi">100500 - Peralatan produksi</option>
+                      <option value="akumulasi depresiasi perlatan produksi">100510 - Akumulasi depresiasi perlatan
+                        produksi</option>
+                      <option value="tanah">100600 - Tanah</option>
+                      <option value="kendaraan">100700 - Kendaraan</option>
+                      <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi depresiasi kendaraan</option>
+                      <option value="utang usaha">200100 - Utang usaha</option>
+                      <option value="utang gaji">200200 - Utang Gaji</option>
+                      <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima dimuka</option>
+                      <option value="utang bank">200400 - Utang Bank</option>
+                      <option value="modal">300100 - Modal</option>
+                      <option value="deviden">300200 - Deviden</option>
+                      <option value="laba ditahan">300500 - Laba ditahan</option>
+                      <option value="pendapatan project">400100 - Pendapatan Project</option>
+                      <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain</option>
+                      <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR dan Honorarium</option>
+                      <option value="beban pemasaran">500002 - Beban Pemasaran</option>
+                      <option value="beban konsumsi">500003 - Beban Konsumsi </option>
+                      <option value="beban operasional projek">500004 - Beban Operasional Project</option>
+                      <option value="beban sewa">500005 - Beban Sewa</option>
+                      <option value="beban utilitas">500006 - Beban Utilitas</option>
+                      <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
+                      <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
+                      <option value="beban penyusutan peralatan produksi">500009 - Beban Penyusutan Peralatan Produksi
+                      </option>
+                      <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan Kendaraan</option>
+                      <option value="beban administrasi">500011 - Beban Administrasi</option>
+                      <option value="beban sosial">500012 - Beban Sosial</option>
+                      <option value="beban lain-lain">500013 - Beban Lain-lain</option>
+                      <option value="beban pajak">500014 - Beban Pajak</option>
+                    </select>
                   </div>
                 </div>
                 <fieldset class="row mb-3">
                   <legend class="col-form-label col-sm-2 pt-0">Saldo Normal</legend>
-                  <div class="col-sm-5">
-                    <div class="form-check1">
-                      <input class="form-check-input" type="radio"
-                       name="gridRadios1" id="gridRadios5" value="option5"
-                       checked>
-                        <label class="form-check-label1">
-                           Debit
-                        </label>
-                    </div>
-                   </div>
-                    <div class="col-sm-5">
-                       <div class="form-check1">
-                         <input class="form-check-input" type="radio"
-                          name="gridRadios1" id="gridRadios6" value="option6">
-                            <label class="form-check-label">
-                               Kredit
-                              </label>
-                          </div>
-                     </div>
-                </fieldset>
-                <div class="row mb-3">
-                  <label class="form-check-label"> Nominal</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" value="1.209.590.146">
+                  <div class="col-sm-10">
+                    <fieldset class="row mb-3">
+                      <div class="col-sm-5">
+                        <div class="form-check1">
+                          <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios5"
+                            value="option5" checked>
+                          <label class="form-check-label1">
+                            Debit
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-5">
+                        <div class="form-check1">
+                          <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                            value="option6">
+                          <label class="form-check-label">
+                            Kredit
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <label class="form-check-label">
+                      Nominal
+                    </label><input type="text" class="form-control" value="1.209.590.146">
                     <label class="form-check-label" for="gridRadios2">
-                                                    Terbilang
-                                                </label>
-                                                <div id="huruf"></div>
+                      Terbilang
+                    </label>
+                    <div id="huruf"></div>
                   </div>
-                </div>
-                <div class="text-right d-flex justify-content-end">
-                  <button type="submit" class="btn btn-primary" style="margin-right: 10px;">Submit</button>
-                  <button type="reset" class="btn btn-secondary">Reset</button>
-                </div>
-              </form><!-- End Horizontal Form -->
-
             </div>
-          </div>
+            <div class="text-right d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary" style="margin-right: 10px;">Submit</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
             </div>
-          </div>
+            </form><!-- End Horizontal Form -->
 
+          </div>
         </div>
+      </div>
+      </div>
+
+      </div>
       </div>
     </section>
 
   </main><!-- End #main -->
 
- <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <nav class="d-flex justify-content-center">
       <div class="copyright">
-      &copy; Copyright <strong><span>tvMu</span></strong>. All Rights Reserved Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      
-    </div>
+        &copy; Copyright <strong><span>tvMu</span></strong>. All Rights Reserved Designed by <a
+          href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+
+      </div>
     </nav>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
