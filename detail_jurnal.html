@@ -15,7 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,9 +49,9 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!img src="assets/img/tvmu.jpeg" alt="">
 
-        <div class="ps-2">
-        <span class="d-none d-lg-block">Tv Muhammadiyah</span>
-      </div>
+          <div class="ps-2">
+            <span class="d-none d-lg-block">Tv Muhammadiyah</span>
+          </div>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -106,49 +108,49 @@
 
   </header><!-- End Header -->
 
-    <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
 
-        <ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav" id="sidebar-nav">
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="dashboard.html">
-                    <i class="bi bi-grid"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="akun.html">
-                    <i class="bi bi-menu-button-wide"></i><span>Akun</span>
-                </a>
-            </li><!-- End Akun Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="akun.html">
+          <i class="bi bi-menu-button-wide"></i><span>Akun</span>
+        </a>
+      </li><!-- End Akun Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="saldo_awal.html">
-                    <i class="bi bi-currency-dollar"></i><span>Saldo Awal Tahun</span>
-                </a>
-            </li><!-- End Saldo Awal Tahun Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="saldo_awal.html">
+          <i class="bi bi-currency-dollar"></i><span>Saldo Awal Tahun</span>
+        </a>
+      </li><!-- End Saldo Awal Tahun Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link" href="transaksi.html">
-                    <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
+      <li class="nav-item">
+        <a class="nav-link" href="transaksi.html">
+          <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
+        </a>
+      </li><!-- End Jurnal Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="bukubesar.html">
-                    <i class="ri-book-2-line"></i><span>Buku Besar</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="bukubesar.html">
+          <i class="ri-book-2-line"></i><span>Buku Besar</span>
+        </a>
+      </li><!-- End Jurnal Nav -->
 
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="lapkeuangan.html">
-                  <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
-              </a>
-          </li><!-- End Laporan keuangan -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="lapkeuangan.html">
+          <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
+        </a>
+      </li><!-- End Laporan keuangan -->
 
-    </aside><!-- End Sidebar-->
+  </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
 
@@ -177,41 +179,201 @@
               <p>Nominal&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: Rp 124.000</p>
               <!-- Button -->
               <div class="text-right d-flex justify-content-end py-4">
-                 <a href="tambah-jurnal.html"> <button type="submit" class="btn btn-primary" style="margin-right: 10px;">Tambah Jurnal</button></a>
+                <!-- Modal Tambah Akun -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#largeModal">
+                  Tambah Jurnal
+                </button>
+                <div class="modal fade" id="largeModal" tabindex="-1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Tambah Jurnal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label">Transaksi / Keterangan</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" value="Pembelian Makan dan Minum 31 Desember 2023"
+                              disabled>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <legend class="col-form-label col-sm-2 pt-0">Kode Jurnal</legend>
+                          <div class="col-sm-10">
+                            <fieldset class="row mb-3">
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6" checked>
+                                  <label class="form-check-label1">
+                                    JU
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6">
+                                  <label class="form-check-label">
+                                    AJP
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6">
+                                  <label class="form-check-label">
+                                    JP
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6">
+                                  <label class="form-check-label">
+                                    JB
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="kode_akun" class="col-sm-2 col-form-label">Kode Akun</label>
+                          <div class="col-sm-10">
+                            <select class="form-control" id="nama_akun" name="nama_akun" required>
+                              <!-- options will be populated here -->
+                              <option selected> Pilih Kode Akun</option>
+                              <option value="kas">100001 - Kas</option>
+                              <option value="kasbank">100002 - Kas Bank</option>
+                              <option value="investasi">100003 - Investasi</option>
+                              <option value="piutang">100100 - Piutang Klien</option>
+                              <option value="perlengkapan habis pakai">100200 - Perlengkapan habis pakai</option>
+                              <option value="peralatan produksi">100500 - Peralatan produksi</option>
+                              <option value="akumulasi depresiasi perlatan produksi">100510 - Akumulasi depresiasi
+                                perlatan produksi</option>
+                              <option value="tanah">100600 - Tanah</option>
+                              <option value="kendaraan">100700 - Kendaraan</option>
+                              <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi depresiasi kendaraan
+                              </option>
+                              <option value="utang usaha">200100 - Utang usaha</option>
+                              <option value="utang gaji">200200 - Utang Gaji</option>
+                              <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima dimuka</option>
+                              <option value="utang bank">200400 - Utang Bank</option>
+                              <option value="modal">300100 - Modal</option>
+                              <option value="deviden">300200 - Deviden</option>
+                              <option value="laba ditahan">300500 - Laba ditahan</option>
+                              <option value="pendapatan project">400100 - Pendapatan Project</option>
+                              <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain</option>
+                              <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR dan Honorarium
+                              </option>
+                              <option value="beban pemasaran">500002 - Beban Pemasaran</option>
+                              <option value="beban konsumsi">500003 - Beban Konsumsi </option>
+                              <option value="beban operasional projek">500004 - Beban Operasional Project</option>
+                              <option value="beban sewa">500005 - Beban Sewa</option>
+                              <option value="beban utilitas">500006 - Beban Utilitas</option>
+                              <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
+                              <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
+                              <option value="beban penyusutan peralatan produksi">500009 - Beban Penyusutan Peralatan
+                                Produksi</option>
+                              <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan Kendaraan</option>
+                              <option value="beban administrasi">500011 - Beban Administrasi</option>
+                              <option value="beban sosial">500012 - Beban Sosial</option>
+                              <option value="beban lain-lain">500013 - Beban Lain-lain</option>
+                              <option value="beban pajak">500014 - Beban Pajak</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="arus_kas" class="col-sm-2 col-form-label">Arus Kas</label>
+                          <div class="col-sm-10">
+                            <select class="form-control" id="arus_kas" name="arus_kas" required>
+                              <option selected>Pilih Arus Kas</option>
+                              <option value="Operasi"> Operasi</option>
+                              <option value="Investasi"> Investasi</option>
+                              <option value="Pendanaan"> Pendanaan</option>
+                              <option value="Masuk"> Kas Masuk</option>
+                              <option value="Keluar">Kas Keluar</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <legend class="col-form-label col-sm-2 pt-0">Saldo Normal</legend>
+                          <div class="col-sm-10">
+                            <fieldset class="row mb-3">
+                              <div class="col-sm-5">
+                                <div class="form-check2">
+                                  <input class="form-check-input" type="radio" name="gridRadios11" id="gridRadios11"
+                                    value="option5" checked>
+                                  <label class="form-check-label2">
+                                    Debit
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-check2">
+                                  <input class="form-check-input" type="radio" name="gridRadios11" id="gridRadios11"
+                                    value="option5">
+                                  <label class="form-check-label">
+                                    Kredit
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                            <label class="form-check-label">
+                              Nominal
+                            </label>
+                            <input type="number" class="form-control" id="angka" name="angka" required>
+                            <label class="form-check-label" for="gridRadios2">
+                              Terbilang
+                            </label>
+                            <div id="huruf"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Modal Tambah Akun-->
+              </div>
+
+              <!-- Table with stripped rows -->
+              <table class="table table-bordered">
+                <thead>
+                  <tr class="text-center">
+                    <th>Kode Jurnal</th>
+                    <th>Kode Akun</th>
+                    <th>Nama Akun</th>
+                    <th>Arus Kas</th>
+                    <th>Debit</th>
+                    <th>Kredit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">JU</td>
+                    <td>500003</td>
+                    <td>Beban Konsumsi</td>
+                    <td class="text-center"> - </td>
+                    <td>Rp.124.000</td>
+                    <td class="text-center"> - </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center">JU</td>
+                    <td>100001</td>
+                    <td>Kas</td>
+                    <td>Operasi</td>
+                    <td class="text-center"> - </td>
+                    <td>Rp.124.000</td>
+                </tbody>
+              </table>
             </div>
-
-            <!-- Table with stripped rows -->
-                        <table class="table table-bordered">
-                          <thead>
-                            <tr class="text-center">
-                              <th>Kode Jurnal</th>
-                              <th>Kode Akun</th>
-                              <th>Nama Akun</th>
-                              <th>Arus Kas</th>
-                              <th>Debit</th>
-                              <th>Kredit</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-center">JU</td>
-                              <td>500003</td>
-                              <td>Beban Konsumsi</td>
-                              <td class="text-center"> - </td>
-                              <td>Rp.124.000</td>
-                              <td class="text-center"> - </td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-center">JU</td>
-                                <td>100001</td>
-                                <td>Kas</td>
-                                <td>Operasi</td>
-                                <td class="text-center"> - </td>
-                                <td>Rp.124.000</td>
-                            </tbody>
-                          </table>
-          </div>
           </div><!-- End Default Card -->
 
         </div>
@@ -221,23 +383,25 @@
 
   </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <nav class="d-flex justify-content-center">
       <div class="copyright">
-      &copy; Copyright <strong><span>tvMu</span></strong>. All Rights Reserved Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      
-    </div>
+        &copy; Copyright <strong><span>tvMu</span></strong>. All Rights Reserved Designed by <a
+          href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+
+      </div>
     </nav>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
