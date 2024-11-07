@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Tambah Periode - tvMu</title>
+  <title>Tambah Periode Akuntansi - tvMu</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -157,7 +157,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
           <li class="breadcrumb-item"><a href ="saldo_awal.html">Saldo Awal Tahun</a></li>
-          <li class="breadcrumb-item"><a href ="detail.html">Detail Periode</a></li>
+          <li class="breadcrumb-item"><a href ="detail.html">Detail Periode Akuntansi</a></li>
           <li class="breadcrumb-item active">Tambah Periode Akuntansi</li>
         </ol>
       </nav>
@@ -168,7 +168,7 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Tambah Periode</h5>
+              <h5 class="card-title">Tambah Periode Akuntansi</h5>
 
               <!-- Horizontal Form -->
                <form>
@@ -216,23 +216,28 @@
                 </div>
                 <fieldset class="row mb-3">
                   <legend class="col-form-label col-sm-2 pt-0">Saldo Normal</legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        D (Debit)
-                      </label>
+                  <div class="col-sm-5">
+                    <div class="form-check1">
+                      <input class="form-check-input" type="radio"
+                       name="gridRadios1" id="gridRadios5" value="option5"
+                       checked>
+                        <label class="form-check-label1">
+                           Debit
+                        </label>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">
-                        K (Kredit)
-                      </label>
-                    </div>
-                  </div>
+                   </div>
+                    <div class="col-sm-5">
+                       <div class="form-check1">
+                         <input class="form-check-input" type="radio"
+                          name="gridRadios1" id="gridRadios6" value="option6">
+                            <label class="form-check-label">
+                               Kredit
+                              </label>
+                          </div>
+                     </div>
                 </fieldset>
                 <div class="row mb-3">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Debit/Kredit</label>
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Nominal</label>
                   <div class="col-sm-8">
                     <input type="password" class="form-control" id="inputPassword">
                   </div>
