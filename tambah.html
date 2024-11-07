@@ -177,116 +177,21 @@
 
                                     <form>
                                         <div class="row mb-3">
-                                            <label for="tanggal" class="col-sm-2 col-form-label">Tanggal</label>
+                                            <label for="tanggal" class="col-sm-2 col-form-label">Tanggal:</label>
                                             <div class="col-sm-10">
                                                 <input type="date" class="form-control" id="tanggal" name="tanggal"
                                                     required>
                                             </div>
                                         </div>
-                                        
                                         <div class="row mb-3">
-                                            <legend class="col-form-label col-sm-2 pt-0">Kode Jurnal</legend>
+                                            <label for="keterangan" class="col-sm-2 col-form-label">Keterangan:</label>
                                             <div class="col-sm-10">
-                                                <fieldset class="row mb-3">
-                                                    <div class="col-sm-5">
-                                                        <div class="form-check1">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="gridRadios1" id="gridRadios5" value="option5"
-                                                                checked>
-                                                            <label class="form-check-label1">
-                                                                JU
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-5">
-                                                        <div class="form-check1">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="gridRadios1" id="gridRadios6" value="option6">
-                                                            <label class="form-check-label">
-                                                                AJP
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-5">
-                                                        <div class="form-check1">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="gridRadios1" id="gridRadios6" value="option6">
-                                                            <label class="form-check-label">
-                                                                JP
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-5">
-                                                        <div class="form-check1">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="gridRadios1" id="gridRadios6" value="option6">
-                                                            <label class="form-check-label">
-                                                                JB
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </fieldset>
-                                              </div>
+                                                <textarea class="form-control" id="keterangan" name="keterangan"
+                                                    rows="4" cols="50"></textarea>
                                             </div>
-
-                      
-                      <div class="row mb-3">
-                        <label for="kode_akun" class="col-sm-2 col-form-label">Kode Akun</label>
-                        <div class="col-sm-10">
-                               <select class="form-control" id="nama_akun" name="nama_akun" required>
-                                    <!-- options will be populated here -->
-                                    <option selected> Pilih Kode Akun</option>
-                                    <option value="kas">100001 - Kas</option>
-                                    <option value="kasbank">100002 - Kas Bank</option>
-                                    <option value="investasi">100003 - Investasi</option>
-                                    <option value="piutang">100100 - Piutang Klien</option>
-                                    <option value="perlengkapan habis pakai">100200 - Perlengkapan habis pakai</option>
-                                    <option value="peralatan produksi">100500 - Peralatan produksi</option>
-                                    <option value="akumulasi depresiasi perlatan produksi">100510 - Akumulasi depresiasi perlatan produksi</option>
-                                    <option value="tanah">100600 - Tanah</option>
-                                    <option value="kendaraan">100700 - Kendaraan</option>
-                                    <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi depresiasi kendaraan</option>
-                                    <option value="utang usaha">200100 - Utang usaha</option>
-                                    <option value="utang gaji">200200 - Utang Gaji</option>
-                                    <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima dimuka</option>
-                                    <option value="utang bank">200400 - Utang Bank</option>
-                                    <option value="modal">300100 - Modal</option>
-                                    <option value="deviden">300200 - Deviden</option>
-                                    <option value="laba ditahan">300500 - Laba ditahan</option>
-                                    <option value="pendapatan project">400100 - Pendapatan Project</option>
-                                    <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain</option>
-                                    <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR dan Honorarium</option>
-                                    <option value="beban pemasaran">500002 - Beban Pemasaran</option>
-                                    <option value="beban konsumsi">500003 - Beban Konsumsi </option>
-                                    <option value="beban operasional projek">500004 - Beban Operasional Project</option>
-                                    <option value="beban sewa">500005 - Beban Sewa</option>
-                                    <option value="beban utilitas">500006 - Beban Utilitas</option>
-                                    <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
-                                    <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
-                                    <option value="beban penyusutan peralatan produksi">500009 - Beban Penyusutan Peralatan Produksi</option>
-                                    <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan Kendaraan</option>
-                                    <option value="beban administrasi">500011 - Beban Administrasi</option>
-                                    <option value="beban sosial">500012 - Beban Sosial</option>
-                                    <option value="beban lain-lain">500013 - Beban Lain-lain</option>
-                                    <option value="beban pajak">500014 - Beban Pajak</option>
-                                  </select>
-                            </div>
-                        </div>
-                       <div class="row mb-3">
-                        <label for="arus_kas" class="col-sm-2 col-form-label">Arus Kas</label>
-                        <div class="col-sm-10">
-                          <select class="form-control" id="arus_kas" name="arus_kas" required>
-                              <option selected>Pilih Arus Kas</option>
-                              <option value="Operasi"> Operasi</option>
-                              <option value="Investasi"> Investasi</option>
-                              <option value="Pendanaan"> Pendanaan</option>
-                              <option value="Masuk"> Kas Masuk</option>
-                              <option value="Keluar">Kas Keluar</option>
-                          </select>
-                        </div>
-                      </div>
-                       <div class="row mb-3">
-                                            <legend class="col-form-label col-sm-2 pt-0">Saldo Normal</legend>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <legend class="col-form-label col-sm-2 pt-0">Debit / Kredit:</legend>
                                             <div class="col-sm-10">
                                                 <fieldset class="row mb-3">
                                                     <div class="col-sm-5">
@@ -320,16 +225,18 @@
                                                 <div id="huruf"></div>
                                             </div>
                                         </div>
-                      <div class="text-right d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary" style="margin-right: 10px;">Submit</button>
-                      </div>
-                    </form>
-                      </div>
+                                        <div class="text-right d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary"
+                                                style="margin-right: 10px;">Submit</button>
+                                            <button type="reset" class="btn btn-secondary">Reset</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                     </div>
-                  </div>
-                </div>
-          </div><!-- End Sales Card -->
-      </section>
+                </div><!-- End Sales Card -->
+            </div><!-- End Left side columns -->
+        </section>
 
 
 
