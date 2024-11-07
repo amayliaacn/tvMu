@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Forms Tambah Data Transaksi - TVMU</title>
+  <title>Tambah Jurnal - TVMU</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -130,14 +130,8 @@
             </li><!-- End Saldo Awal Tahun Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="transaksi.html">
-                    <i class="bi bi-cash"></i><span>Transaksi</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link " href="jurnal.html">
-                    <i class="bi bi-book"></i><span>Jurnal</span>
+                <a class="nav-link" href="transaksi.html">
+                    <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
                 </a>
             </li><!-- End Jurnal Nav -->
 
@@ -148,28 +142,10 @@
             </li><!-- End Jurnal Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="neracasaldo.html">
-                    <i class="bx bxs-coin-stack"></i><span>Neraca Saldo</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="labarugi.html">
-                    <i class="ri-exchange-dollar-line"></i><span>Laba Rugi</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="laporan.html">
-                    <i class="ri-draft-line"></i><span>Lap Perubahan Modal</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="neraca.html">
-                    <i class="ri-scales-3-line"></i><span>Neraca</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
+              <a class="nav-link collapsed" href="lapkeuangan.html">
+                  <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
+              </a>
+          </li><!-- End Laporan keuangan -->
 
     </aside><!-- End Sidebar-->
 
@@ -194,19 +170,18 @@
             <div class="row">
   
               <!-- Sales Card -->
-              <div class="col-xxl-12 col-md-12">
-                <div class="card info-card sales-card">
+              <div class="card">
   
                   <div class="card-body">
                     <h5 class="card-title">Tambah Jurnal</h5>
                     <form method="post" action="">
                       <div class="row mb-3">
-                        <label for="tanggal" class="col-sm-8 col-form-label">Tanggal:</label>
+                        <label for="tanggal" class="col-sm-8 col-form-label">Tanggal</label>
                         <div class="col-sm-10">
                           <input type="date" class="form-control" id="tanggal" name="tanggal" required>
                         </div>
                       </div><fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-8 pt-0">Kode Jurnal:</legend>
+                        <legend class="col-form-label col-sm-8 pt-0">Kode Jurnal</legend>
                         <div class="col-sm-5">
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
@@ -237,7 +212,7 @@
                         </div>
                       </fieldset>
                       <div class="row mb-3">
-                        <label for="kode_akun" class="col-sm-8 col-form-label">Kode Akun:</label>
+                        <label for="kode_akun" class="col-sm-8 col-form-label">Kode Akun</label>
                         <div class="col-sm-10">
                           <div class="row mb-3">
                             <div class="col-sm-10">
@@ -282,7 +257,7 @@
                         </div>
                       </div>
                        <div class="row mb-3">
-                        <label for="arus_kas" class="col-sm-8 col-form-label">Arus Kas:</label>
+                        <label for="arus_kas" class="col-sm-8 col-form-label">Arus Kas</label>
                         <div class="col-sm-10">
                           <select class="form-control" id="arus_kas" name="arus_kas" required>
                               <option selected>Pilih Arus Kas</option>
@@ -295,26 +270,27 @@
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <legend class="col-form-label col-sm-8 pt-0">Debit / Kredit:</legend>
-                        <div class="col-sm-10">
-                          <fieldset class="row mb-3">
-                            <div class="col-sm-5">
-                              <div class="form-check1">
-                                <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios5" value="option5" checked>
-                                <label class="form-check-label1">
-                                  Debit
-                                </label>
-                              </div>
-                            </div>
-                            <div class="col-sm-5">
-                              <div class="form-check1">
-                                <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6" value="option6">
-                                <label class="form-check-label">
+                        <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Saldo Normal</legend>
+                   <div class="col-sm-5">
+                      <div class="form-check1">
+                        <input class="form-check-input" type="radio"
+                          name="gridRadios1" id="gridRadios5" value="option5"
+                          checked>
+                              <label class="form-check-label1">
+                                Debit
+                              </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="form-check1">
+                       <input class="form-check-input" type="radio"
+                          name="gridRadios1" id="gridRadios6" value="option6">
+                             <label class="form-check-label">
                                  Kredit
-                                </label>
-                              </div>
-                            </div>
-                          </fieldset>
+                             </label>
+                     </div>                                
+                  </fieldset> 
                           <label class="form-check-label">
                             Nominal
                            </label>
