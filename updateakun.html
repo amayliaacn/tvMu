@@ -92,7 +92,7 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+                            <a class="dropdown-item d-flex align-items-center" href="index.html">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Sign Out</span>
                             </a>
@@ -153,12 +153,12 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Update Data Transaksi</h1>
+            <h1>Update Data Akun</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="akun.html">Akun</a></li>
-                    <li class="breadcrumb-item active">Update Akun</li>
+                    <li class="breadcrumb-item active">Update Data Akun</li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -169,7 +169,7 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Tambah Akun</h5>
+              <h5 class="card-title">Update Data Akun</h5>
               <form>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Kode Akun</label>
@@ -215,6 +215,11 @@
                         <div class="col-sm-10">
                           <select class="form-control" id="kategori" name="kategori" required>
                               <option selected> Asset</option>
+                                <option value="Kewajiban"> Kewajiban / Utang</option>
+                                <option value="Ekuitas"> Ekuitas / Modal</option>
+                                <option value="Pendapatan"> Pendapatan / Penerimaan</option>
+                                <option value="Biaya">Biaya / Beban</option>
+                            </select>
                           </select>
                         </div>
                       </div>  
