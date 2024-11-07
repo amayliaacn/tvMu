@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Forms Update Data Transaksi - TVMU</title>
+    <title>Update Data Transaksi - TVMU</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -135,14 +135,8 @@
             </li><!-- End Saldo Awal Tahun Nav -->
 
             <li class="nav-item">
-                <a class="nav-link " href="transaksi.html">
-                    <i class="bi bi-cash"></i><span>Transaksi</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="jurnal.html">
-                    <i class="bi bi-book"></i><span>Jurnal</span>
+                <a class="nav-link" href="transaksi.html">
+                    <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
                 </a>
             </li><!-- End Jurnal Nav -->
 
@@ -153,10 +147,10 @@
             </li><!-- End Jurnal Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="lapkeuangan.html">
-                    <i class="bx bxs-coin-stack"></i><span>Lap Keuangan</span>
-                </a>
-            </li><!-- End Jurnal Nav -->
+              <a class="nav-link collapsed" href="lapkeuangan.html">
+                  <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
+              </a>
+          </li><!-- End Laporan keuangan -->
 
     </aside><!-- End Sidebar-->
     <main id="main" class="main">
@@ -166,8 +160,8 @@
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="transaksi.html">Transaksi</a></li>
-                    <li class="breadcrumb-item active">Update Transaksi</li>
+                    <li class="breadcrumb-item"><a href="transaksi.html">Transaksi Jurnal</a></li>
+                    <li class="breadcrumb-item active">Update Data Transaksi</li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -186,20 +180,20 @@
                                     <h5 class="card-title">Tambah Data Transaksi</h5>
                                     <form method="post" action="">
                                         <div class="row mb-3">
-                                            <label for="tanggal" class="col-sm-2 col-form-label">Tanggal:</label>
+                                            <label for="tanggal" class="col-sm-2 col-form-label">Tanggal</label>
                                             <div class="col-sm-10">
                                                 <input type="date" class="form-control" id="tanggal" name="tanggal" value="16/01/2023">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="keterangan" class="col-sm-2 col-form-label">Keterangan:</label>
+                                            <label for="keterangan" class="col-sm-2 col-form-label">Keterangan</label>
                                             <div class="col-sm-10">
                                                 <textarea class="form-control" id="keterangan" name="keterangan"
                                                     rows="4" cols="50">Backdrop Pameran Program Hilirisasi Penelitian dan Pengabdiab + Sound</textarea>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <legend class="col-form-label col-sm-2 pt-0">Debit / Kredit:</legend>
+                                            <legend class="col-form-label col-sm-2 pt-0">Saldo Normal</legend>
                                             <div class="col-sm-10">
                                                 <fieldset class="row mb-3">
                                                     <div class="col-sm-5">
@@ -244,23 +238,9 @@
                         </div>
                     </div><!-- End Sales Card -->
                 </div><!-- End Left side columns -->
+            </div>
+        </section>
 
-                <!-- Right side columns -->
-                <div class="col-lg-4">
-                    <!-- Recent Activity -->
-                    <div class="card">
-                        <div class="filter">
-                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <li class="dropdown-header text-start">
-                                    <h6>Filter</h6>
-                                </li>
-
-                                <li><a class="dropdown-item" href="#">Today</a></li>
-                                <li><a class="dropdown-item" href="#">This Month</a></li>
-                                <li><a class="dropdown-item" href="#">This Year</a></li>
-                            </ul>
-                        </div>
 
                          </main><!-- End #main -->
 
