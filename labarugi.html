@@ -155,15 +155,14 @@
 
 </aside><!-- End Sidebar-->
 
-    <main id="main" class="main">
+ <main id="main" class="main">
 
         <div class="pagetitle">
             <h1>Laba Rugi</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="lapkeuangan.html">Laporan Keuangan</a></li>
-                    <li class="breadcrumb-item active">Laba Rugi</li>
+                    <li class="breadcrumb-item active"><a href="labarugi.html">Laba Rugi</a></li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -180,101 +179,23 @@
                                 <table class="table table-bordered" style="width: 80%;">
                                     <thead>
                                         <tr>
-                                            <th class="table-primary">Penghasilan</th>
+                                            <th class="table-primary">Pendapatan</th>
                                             <th class="table-primary">           </th>
                                             <th class="table-primary">           </th>
                                             <th class="table-primary">           </th>
-                                         <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun" name="nama_akun"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected>Pilih Kode Akun</option>
-                                                        <option value="400100">400100</option>
-                                                        <option value="400200">400200</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement = document.getElementById('nama_akun');
-                                                const inputField = document.getElementById('selected-option');
 
-                                                // Create an object to map codes to account names
-                                                const accountNames = {
-                                                    '400100': 'Pendapatan Project',
-                                                    '400200': 'Pendapatan Lain-lain'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName = accountNames[selectedCode];
-
-                                                    // Update the input field with the account name
-                                                    inputField.value = accountName;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                        <tr>
+                                            <td>400100</td>
+                                            <td>Pendapatan Project</td>
                                             <th style="font-weight: normal ;width: 10%;">Rp98.411.955</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                        <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun1" name="nama_akun1"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected>Pilih Kode Akun</option>
-                                                        <option value="400100">400100</option>
-                                                        <option value="400200">400200</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option1" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement1 = document.getElementById('nama_akun1');
-                                                const inputField1 = document.getElementById('selected-option1');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames1 = {
-                                                    '400100': 'Pendapatan Project',
-                                                    '400200': 'Pendapatan Lain-lain'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement1.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode1 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName1 = accountNames1[selectedCode1];
-
-                                                    // Update the input field with the account name
-                                                    inputField1.value = accountName1;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
-                                            <th style="font-weight: normal ;width: 10%;">Rp - </th>
-                                            <th style="width: 20%;"></th>
+                                        <td>400200</td>
+                                        <td>Pendapatan Lain-lain</td>
+                                        <td>Rp.-</td>
                                         </tr>
                                             </tbody>
                                         <tr style="height:42px">
@@ -295,7 +216,7 @@
                                 <table class="table table-bordered" style="width: 80%;">
                                     <thead>
                                         <tr>
-                                            <th class="table-primary">Beban</th>
+                                            <th class="table-primary">Biaya</th>
                                             <th class="table-primary"></th>
                                             <th class="table-primary"></th>
                                             <th class="table-primary"></th>
@@ -303,145 +224,17 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                        <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun2" name="nama_akun2"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option2" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement2 = document.getElementById('nama_akun2');
-                                                const inputField2 = document.getElementById('selected-option2');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames2 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement2.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode2 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName2 = accountNames2[selectedCode2];
-
-                                                    // Update the input field with the account name
-                                                    inputField2.value = accountName2;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50001</td>
+                                            <td>Beban Gaji,THR dan Honorarium</td>
                                             <th style="font-weight: normal ;width: 10%;">Rp15.591.681</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
                                             </tbody>
                                         </tr>
-                                                 <tbody>
+                                        <tbody>
                                         <tr>
-                                            <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun3" name="nama_akun3"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option3" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement3 = document.getElementById('nama_akun3');
-                                                const inputField3 = document.getElementById('selected-option3');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames3 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement3.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode3 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName3 = accountNames3[selectedCode3];
-
-                                                    // Update the input field with the account name
-                                                    inputField3.value = accountName3;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50002</td>
+                                            <td>Beban Pemasaran</td>
                                             <th style="font-weight: normal ;width: 30%;">-Rp1.071.500</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -450,71 +243,8 @@
                                             <tbody>
                                         <tr>
                                             <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun4" name="nama_akun4"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option4" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement4 = document.getElementById('nama_akun4');
-                                                const inputField4 = document.getElementById('selected-option4');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames4 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement4.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode4 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName4 = accountNames4[selectedCode4];
-
-                                                    // Update the input field with the account name
-                                                    inputField4.value = accountName4;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50003</td>
+                                            <td>Beban Konsumsi</td>
                                             <th style="font-weight: normal ;width: 30%;">-Rp11.039.886</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -523,71 +253,8 @@
                                             <tbody>
                                         <tr>
                                             <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun5" name="nama_akun5"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option5" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement5 = document.getElementById('nama_akun5');
-                                                const inputField5 = document.getElementById('selected-option5');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames5 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement5.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode5 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName5 = accountNames5[selectedCode5];
-
-                                                    // Update the input field with the account name
-                                                    inputField5.value = accountName5;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50004</td>
+                                            <td>Beban Operasional Project</td>
                                             <th style="font-weight: normal ;width: 30%;">Rp1.221.629.884</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -596,71 +263,8 @@
                                             <tbody>
                                         <tr>
                                             <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun6" name="nama_akun6"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option6" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement6 = document.getElementById('nama_akun6');
-                                                const inputField6 = document.getElementById('selected-option6');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames6 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement6.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode6 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName6 = accountNames6[selectedCode6];
-
-                                                    // Update the input field with the account name
-                                                    inputField6.value = accountName6;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50005</td>
+                                            <td>Beban Sewa</td>
                                             <th style="font-weight: normal ;width: 30%;">Rp - </th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -668,72 +272,9 @@
                                         </tr>
                                                 <tbody>
                                         <tr>
-                                                                                 <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun7" name="nama_akun7"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option7" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement7 = document.getElementById('nama_akun7');
-                                                const inputField7 = document.getElementById('selected-option7');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames7 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement7.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode7 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName7 = accountNames7[selectedCode7];
-
-                                                    // Update the input field with the account name
-                                                    inputField7.value = accountName7;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <tr>
+                                            <td>50006</td>
+                                            <td>Beban Utilitas</td>
                                             <th style="font-weight: normal ;width: 30%;">-Rp9.217.615 </th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -742,71 +283,8 @@
                                                <tbody>
                                         <tr>
                                             <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun8" name="nama_akun8"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option=8" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement8 = document.getElementById('nama_akun8');
-                                                const inputField8 = document.getElementById('selected-option8');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames8 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement8.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode8 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName8 = accountNames8[selectedCode8];
-
-                                                    // Update the input field with the account name
-                                                    inputField8.value = accountName8;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50007</td>
+                                            <td>Beban Perlengkapan</td>
                                             <th style="font-weight: normal ;width: 30%;">-Rp5.030.400</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -815,71 +293,8 @@
                                             <tbody>
                                         <tr>
                                             <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun9" name="nama_akun9"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option9" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement9 = document.getElementById('nama_akun9');
-                                                const inputField9 = document.getElementById('selected-option9');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames9 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement9.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode9 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName9 = accountNames9[selectedCode9];
-
-                                                    // Update the input field with the account name
-                                                    inputField9.value = accountName9;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50008</td>
+                                            <td>Beban Pemeliharan</td>
                                             <th style="font-weight: normal ;width: 20%;">Rp8.071.000</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -888,71 +303,8 @@
                                             <tbody>
                                         <tr>
                                             <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun10" name="nama_akun10"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option10" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement10 = document.getElementById('nama_akun10');
-                                                const inputField10 = document.getElementById('selected-option10');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames10 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement10.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode10 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName10 = accountNames10[selectedCode10];
-
-                                                    // Update the input field with the account name
-                                                    inputField10.value = accountName10;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50009</td>
+                                            <td>Beban Penyusutan Peralatan Produksi</td>
                                             <th style="font-weight: normal ;width: 30%;">Rp -</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -960,72 +312,8 @@
                                         </tr>
                                             <tbody>
                                         <tr>
-                                            <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun11" name="nama_akun11"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option11" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement11 = document.getElementById('nama_akun11');
-                                                const inputField11 = document.getElementById('selected-option11');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames11 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement11.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode11 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName11 = accountNames11[selectedCode11];
-
-                                                    // Update the input field with the account name
-                                                    inputField11.value = accountName11;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50010</td>
+                                            <td>Beban Penyusutan Kendaraan</td>
                                             <th style="font-weight: normal ;width: 30%;">Rp -</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -1034,71 +322,8 @@
                                             <tbody>
                                         <tr>
                                                 <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun12" name="nama_akun12"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option12" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement12 = document.getElementById('nama_akun12');
-                                                const inputField12 = document.getElementById('selected-option12');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames12 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement12.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode12 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName12 = accountNames12[selectedCode12];
-
-                                                    // Update the input field with the account name
-                                                    inputField12.value = accountName12;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50011</td>
+                                            <td>Beban Administrasi</td>
                                             <th style="font-weight: normal ;width: 20%;">Rp856.300 </th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -1107,71 +332,8 @@
                                             <tbody>
                                         <tr>
                                             <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun13" name="nama_akun13"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option3" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement13 = document.getElementById('nama_akun13');
-                                                const inputField13 = document.getElementById('selected-option13');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames13 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement13.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode13 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName13 = accountNames13[selectedCode13];
-
-                                                    // Update the input field with the account name
-                                                    inputField13.value = accountName13;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50012</td>
+                                            <td>Beban Sosial</td>
                                             <th style="font-weight: normal ;width: 20%;">Rp8.675.300</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
@@ -1179,150 +341,24 @@
                                         </tr>
                                             <tbody>
                                         <tr>
-                                            <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun14" name="nama_akun14"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option3" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement14 = document.getElementById('nama_akun14');
-                                                const inputField14 = document.getElementById('selected-option14');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames14 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement14.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode14 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName14 = accountNames14[selectedCode14];
-
-                                                    // Update the input field with the account name
-                                                    inputField14.value = accountName14;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50013</td>
+                                            <td>Beban Lain-lain</td>
                                             <th style="font-weight: normal ;width: 20%;">-Rp1.223.162.284</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
                                             </tbody>
                                         </tr>
-                                            <tbody>
+
+                                        <tbody>
                                         <tr>
-                                            <tr>
-                                            <th> 
-                                                <!-- ini bagian pilihan -->
-                                                <div class="col-lg-6">
-                                                    <select class="col-form-label" id="nama_akun15" name="nama_akun15"
-                                                        style="border: none;" required>
-                                                        <!-- options will be populated here -->
-                                                        <option selected></option>
-                                                        <option value="500001">500001</option>
-                                                        <option value="500002">500002</option>
-                                                        <option value="500003">500003</option>
-                                                        <option value="500004">500004</option>
-                                                        <option value="500005">500005</option>
-                                                        <option value="500006">500006</option>
-                                                        <option value="500007">500007</option>
-                                                        <option value="500008">500008</option>
-                                                        <option value="500009">500009</option>
-                                                        <option value="500010">500010</option>
-                                                        <option value="500011">500011</option>
-                                                        <option value="500012">500012</option>
-                                                        <option value="500013">500013</option>
-                                                        <option value="500014">500014</option>
-                                                    </select>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <!-- bagian input pilihan -->
-                                                <input type="text" id="selected-option3" style="border: none;"
-                                                    class="form-control-plaintext w-75" readonly>
-                                            </th>
-                                            <script>
-                                                // Get the select element and the input field
-                                                const selectElement15 = document.getElementById('nama_akun15');
-                                                const inputField15 = document.getElementById('selected-option15');
-
-                                                // Create an object to map codes to account names
-                                                const accountNames15 = {
-                                                    '500001': 'Beban gaji, THR dan Honorarium',
-                                                    '500002': 'Beban Pemasaran',
-                                                    '500003': 'Beban Konsumsi',
-                                                    '500004': 'Beban Operasional Project',
-                                                    '500005': 'Beban Sewa',
-                                                    '500006': 'Beban Utilitas',
-                                                    '500007': 'Beban Perlengkapan',
-                                                    '500008': 'Beban Pemeliharaan',
-                                                    '500009': 'Beban Penyusutan Peralatan Produksi',
-                                                    '500010': 'Beban Penyusutan Kendaraan',
-                                                    '500011': 'Beban Administrasi',
-                                                    '500012': 'Beban Sosial',
-                                                    '500013': 'Beban Lain-lain',
-                                                    '500014': 'Beban Pajak'
-                                                };
-
-                                                // Add an event listener to the select element
-                                                selectElement15.addEventListener('change', function () {
-                                                    // Get the selected option's value (code)
-                                                    const selectedCode15 = this.value;
-
-                                                    // Get the corresponding account name from the object
-                                                    const accountName15 = accountNames15[selectedCode15];
-
-                                                    // Update the input field with the account name
-                                                    inputField15.value = accountName15;
-                                                });
-                                            </script>
-                                            <!-- akhir pilihan -->
+                                            <td>50014</td>
+                                            <td>Beban Pajak</td>
                                             <th style="font-weight: normal ;width: 20%;">-Rp5.302.500</th>
                                             <th style="width: 20%;"></th>
                                         </tr>
                                             </tbody>
                                         </tr>
+                                           
                                          <tr style="height:42px">
                                         <td><blank></blank></td>
                                         <td><blank></blank></td>
@@ -1359,6 +395,7 @@
         </section>
 
     </main><!-- End #main -->
+    
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
