@@ -151,7 +151,7 @@
 
     </aside><!-- End Sidebar-->
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
     <div class="pagetitle">
       <h1>Dashboard</h1>
@@ -223,7 +223,7 @@
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-currency-dollar"></i>
+                      <i class="bi bi-graph-up"></i>
                     </div>
                     <div class="ps-3">
                       <h6 style="font-size: 20px;">Rp. 1.248.239.000</h6>
@@ -249,7 +249,7 @@
                       <i class="ri-hand-coin-line"></i>
                     </div>
                     <div class="ps-3">
-                      <h6 style="font-size: 20px;">Rp. 347.268.000</h6>
+                      <h6 style="font-size: 20px;">Rp. 745.268.000</h6>
 
                     </div>
                   </div>
@@ -296,7 +296,7 @@
                       <i class="bi bi-wallet-fill"></i>
                     </div>
                     <div class="ps-3">
-                      <h6 style="font-size: 20px;">Rp 178.000.000</h6>
+                      <h6 style="font-size: 20px;">Rp 578.000.000</h6>
 
                     </div>
                   </div>
@@ -319,7 +319,7 @@
                       <i class="bi bi-lightning"></i>
                     </div>
                     <div class="ps-3">
-                      <h6 style="font-size: 20px;">Rp 217.000.000</h6>
+                      <h6 style="font-size: 20px;">Rp 647.000.000</h6>
 
                     </div>
                   </div>
@@ -352,98 +352,158 @@
 
             </div><!-- End Kendaraan -->
 
-             <!-- Perlengkapan Habis Pakai -->
-            <div class="col-xxl-3 col-xl-6">
 
-              <div class="card info-card revenue-card">
-
-                <div class="card-body">
-                  <h5 class="card-title">Perlengkapan Habis Pakai <span>| Saat ini</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="ri-briefcase-2-line"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6 style="font-size: 20px;">Rp. 543.000.000</h6>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div><!-- End Perlengkapan Habis Pakai -->
-
-            <!-- Akumulasi Depresiasi Peralatan Produksi  -->
-            <div class="col-xxl-3 col-xl-6">
-
-              <div class="card info-card deviden-card">
+<!-- Column Chart -->
+            <div class="col-12">
+              <div class="card">
 
                 <div class="card-body">
-                  <h5 class="card-title">Akumulasi Depresiasi Peralatan Produksi <span>| Saat ini</span></h5>
+                  <h5 class="card-title"> Column Chart <span></span></h5>
+                  <!-- Line Chart -->
+                  <div id="columnChart"></div>
 
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-graph-up"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6 style="font-size: 20px;">Rp 574.000.000</h6>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    new ApexCharts(document.querySelector("#columnChart"), {
+      series: [ {
+        name: 'Pendapatan Diterima Dimuka',
+        data: [475000000, 521000000, 500000000, 540000000, 584000000, 600000000, 625000000, 650000000, 700000000, 745268000]
+       }, {
+        name: 'Pendapatan Project  ',
+        data: [298000000, 333444000, 364000000, 371000000, 451000000, 421000000, 475000000, 500457000, 535124000, 578000000]
+       },{
+        name: 'Pendapatan Lain - Lain',
+        data: [397458000, 438000000, 478000000, 565457000, 491000000, 517450000, 545000000, 584000000, 542000000, 647000000]
+       }],
+      chart: {
+        type: 'bar',
+        height: 350
+      },
+      plotOptions: {
+        bar: {
+          horizontal: false,
+          columnWidth: '55%',
+          endingShape: 'rounded'
+        },
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        show: true,
+        width: 2,
+        colors: ['transparent']
+      },
+      xaxis: {
+        categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
+      },
+      yaxis: {
+        title: {
+          text: 'Rp (rupiah)'
+        },
+      
+        labels: {
+                formatter: function(value) {
+                  return (value/1000).toLocaleString('id-ID') + 'k'; // Format angka dengan pemisah ribuan dan menambahkan 'Rp'
+                }
+              }
+            },
+            fill: {
+              opacity: 1
+            },
+            tooltip: {
+              y: {
+                formatter: function(val) {
+                  return "Rp " + val.toLocaleString('id-ID') + " rupiah"; // Format tooltip
+                }
+        }
+      },
+      colors: ['#00E396', '#FF0055', '#FF69B4'] // Ganti warna sesuai kebutuhan
+    }).render();
+  });
+</script>
+</div>
+</div>
+</div>
+<!-- End Column Chart -->
 
-                    </div>
-                  </div>
+<!-- Grafik  -->
+            <div class="col-12">
+              <div class="card">
 
-                </div>
-              </div>
-
-            </div><!-- End Akumulasi Depresiasi Peralatan Produksi -->
-
-            <!-- Akumulasi Depresiasi Kendaraan -->
-            <div class="col-xxl-3 col-xl-6">
-
-              <div class="card info-card sales-card">
-              
                 <div class="card-body">
-                  <h5 class="card-title"> Akumulasi Depresiasi Kendaraan <span>| Saat ini</span></h5>
+                  <h5 class="card-title"> Grafik <span></span></h5>
 
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="ri-e-bike-line"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6 style="font-size: 20px;">Rp 845.123.000</h6>
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
 
-                    </div>
-                  </div>
-
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [ {
+        name: 'Pendapatan Diterima Dimuka',
+        data: [475000000, 521000000, 500000000, 540000000, 584000000, 600000000, 625000000, 650000000, 700000000, 745268000]
+       }, {
+        name: 'Pendapatan Project  ',
+        data: [298000000, 333444000, 364000000, 371000000, 451000000, 421000000, 475000000, 500457000, 535124000, 578000000]
+       },{
+        name: 'Pendapatan Lain - Lain',
+        data: [397458000, 438000000, 478000000, 565457000, 491000000, 517450000, 545000000, 584000000, 542000000, 647000000]
+      }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#00E396', '#FFDA89', '#FF69B4'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.1,
+                            opacityTo: 0.2,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
+                        },
+                        yaxis:{
+                          labels: {
+                formatter: function(value) {
+                  return (value/1000).toLocaleString('id-ID') + 'K'; // Format angka dengan pemisah ribuan dan menambahkan 'Rp'
+                }
+              }
+            },
+            fill: {
+              opacity: 1
+            },
+                      tooltip: {
+                        y: {
+                         formatter: function(val) {
+                            return "Rp " + val.toLocaleString('id-ID') + " rupiah"; // Format tooltip
+                          }
+                        },
+                      }
+                      }).render();
+                    });
+                  </script>
+                  <!-- End Line Chart -->
                 </div>
               </div>
-
-            </div><!-- Akumulasi Depresiasi Kendaraan  -->
-
-            <!-- Tanah -->
-            <div class="col-xxl-3 col-xl-6">
-
-                <div class="card info-card customers-card">
-
-
-                <div class="card-body">
-                  <h5 class="card-title"> Tanah <span>| Saat ini</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="ri-community-line"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6 style="font-size: 20px;">Rp 487.168.129</h6>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div><!-- End Tanah -->
+            </div><!-- End Grafik -->
         
         <!/div><!-- End Left side columns -->
 
