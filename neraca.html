@@ -168,19 +168,14 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title text-right d-flex justify-content-end">
-                                <button id="printBtn" class="btn btn-primary mb-3"
-                                    style="margin-right: 10px;">Cetak</button>
-                                <button id="exportExcelBtn" class="btn btn-success mb-3">Ekspor ke Excel</button>
+                                <button id="printBtn" class="btn btn-primary mb-3" style="margin-right: 10px;"><i
+                                        class="bi bi-printer"></i></button>
+                                <button id="exportExcelBtn" class="btn btn-success mb-3">Eksport Excel</button>
                             </div>
                             <!-- Table with stripped rows -->
                             <table class="table table-bordered" style="width: 100%; height: fit-content;"
                                 id="tabel neraca">
                                 <thead>
-                                    <tr style="border: none;">
-                                        <th colspan="11" style="text-align: center; border: none;">
-                                            <h4>LAPORAN POSISI KEUANGAN</h4>
-                                        </th>
-                                    </tr>
                                     <!-- assets -->
                                 </thead>
                                 <tbody>
@@ -533,8 +528,12 @@
             win.document.write('table { border-collapse: collapse; width: 100%; }');
             win.document.write('th, td { border: 1px solid black; padding: 8px; text-align: left; }');
             win.document.write('th { background-color: #f2f2f2; }'); // Warna latar belakang untuk header
+            win.document.write('h2 { text-align: center; }'); // Center the title
             win.document.write('</style>');
-            win.document.write('</head><body >');
+            win.document.write('</head><body>');
+
+            // Include title in the printed document
+            win.document.write('<h2>Laporan Posisi Keuangan</h2>'); // Title for the printed document
             win.document.write(element.outerHTML);
             win.document.write('</body></html>');
             win.document.close();
@@ -544,11 +543,47 @@
         // Fungsi untuk mengekspor tabel ke Excel
         document.getElementById('exportExcelBtn').addEventListener('click', function () {
             var element = document.getElementById('tabel neraca');
+
+            // Create a new row for the title
+            var titleRow = document.createElement("tr");
+            var titleCell = document.createElement("td");
+            titleCell.colSpan = 11; // Adjust the colspan based on your table structure
+            titleCell.innerText = 'Laporan Posisi Keuangan';
+            titleCell.style.fontWeight = 'bold'; // Make the title bold
+            titleCell.style.fontSize = '16px'; // Adjust font size if needed
+            titleCell.style.textAlign = 'center'; // Center the title
+            titleRow.appendChild(titleCell);
+
+            // Append the title row to the table before exporting
+            var tbody = element.querySelector("tbody");
+            tbody.insertBefore(titleRow, tbody.firstChild);
+
+            // Convert the table to a workbook
             var wb = XLSX.utils.table_to_book(element, { sheet: "Data" });
+
+            // Set column widths
+            var ws = wb.Sheets["Data"];
+            ws['!cols'] = [
+                { wpx: 100 },
+                { wpx: 100 },
+                { wpx: 50 },
+                { wpx: 100 },
+                { wpx: 100 },
+                { wpx: 10 },
+                { wpx: 100 },
+                { wpx: 100 },
+                { wpx: 50 },
+                { wpx: 100 },
+                { wpx: 100 }
+            ];
+
+            // Write the file
             XLSX.writeFile(wb, 'tabel neraca.xlsx');
+
+            // Remove the title row after exporting to keep the original table intact
+            tbody.removeChild(titleRow);
         });
     </script>
-
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
