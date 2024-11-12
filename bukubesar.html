@@ -168,193 +168,213 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">
-                                <div class="col-lg-3">
-                                    <label for="input" class="d-flex justify-content-start">Kode Akun</label>
-                                    <select style="width: 160%;" class="form-control" id="nama_akun" name="nama_akun"
-                                        required>
-                                        <!-- options will be populated here -->
-                                        <option selected>Pilih Kode Akun</option>
-                                        <option value="kas">100001 - Kas</option>
-                                        <option value="kasbank">100002 - Kas Bank</option>
-                                        <option value="investasi">100003 - Investasi</option>
-                                        <option value="piutang">100100 - Piutang Klien</option>
-                                        <option value="perlengkapan habis pakai">100200 - Perlengkapan habis pakai
-                                        </option>
-                                        <option value="peralatan produksi">100500 - Peralatan produksi</option>
-                                        <option value="akumulasi depresiasi perlatan produksi">100510 - Akumulasi
-                                            depresiasi perlatan produksi</option>
-                                        <option value="tanah">100600 - Tanah</option>
-                                        <option value="kendaraan">100700 - Kendaraan</option>
-                                        <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi depresiasi
-                                            kendaraan</option>
-                                        <option value="utang usaha">200100 - Utang usaha</option>
-                                        <option value="utang gaji">200200 - Utang Gaji</option>
-                                        <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima dimuka
-                                        </option>
-                                        <option value="utang bank">200400 - Utang Bank</option>
-                                        <option value="modal">300100 - Modal</option>
-                                        <option value="deviden">300200 - Deviden</option>
-                                        <option value="laba ditahan">300500 - Laba ditahan</option>
-                                        <option value="pendapatan project">400100 - Pendapatan Project</option>
-                                        <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain</option>
-                                        <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR dan
-                                            Honorarium</option>
-                                        <option value="beban pemasaran">500002 - Beban Pemasaran</option>
-                                        <option value="beban konsumsi">500003 - Beban Konsumsi </option>
-                                        <option value="beban operasional projek">500004 - Beban Operasional Project
-                                        </option>
-                                        <option value="beban sewa">500005 - Beban Sewa</option>
-                                        <option value="beban utilitas">500006 - Beban Utilitas</option>
-                                        <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
-                                        <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
-                                        <option value="beban penyusutan peralatan produksi">500009 - Beban Penyusutan
-                                            Peralatan Produksi</option>
-                                        <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan Kendaraan
-                                        </option>
-                                        <option value="beban administrasi">500011 - Beban Administrasi</option>
-                                        <option value="beban sosial">500012 - Beban Sosial</option>
-                                        <option value="beban lain-lain">500013 - Beban Lain-lain</option>
-                                        <option value="beban pajak">500014 - Beban Pajak</option>
-                                    </select>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="col-lg-6">
+                                        <label for="input" class="d-flex justify-content-start mb-0">Kode Akun
+                                            <select style="width: 75%; margin-left: 10px;" class="form-control"
+                                                id="nama_akun" name="nama_akun" required>
+                                                <!-- options will be populated here -->
+                                                <option selected>Pilih Kode Akun</option>
+                                                <option value="kas">100001 - Kas</option>
+                                                <option value="kasbank">100002 - Kas Bank</option>
+                                                <option value="investasi">100003 - Investasi</option>
+                                                <option value="piutang">100100 - Piutang Klien</option>
+                                                <option value="perlengkapan habis pakai">100200 - Perlengkapan habis
+                                                    pakai</option>
+                                                <option value="peralatan produksi">100500 - Peralatan produksi</option>
+                                                <option value="akumulasi depresiasi perlatan produksi">100510 -
+                                                    Akumulasi depresiasi perlatan produksi</option>
+                                                <option value="tanah">100600 - Tanah</option>
+                                                <option value="kendaraan">100700 - Kendaraan</option>
+                                                <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi
+                                                    depresiasi kendaraan</option>
+                                                <option value="utang usaha">200100 - Utang usaha</option>
+                                                <option value="utang gaji">200200 - Utang Gaji</option>
+                                                <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima
+                                                    dimuka</option>
+                                                <option value="utang bank">200400 - Utang Bank</option>
+                                                <option value="modal">300100 - Modal</option>
+                                                <option value="deviden">300200 - Deviden</option>
+                                                <option value="laba ditahan">300500 - Laba ditahan</option>
+                                                <option value="pendapatan project">400100 - Pendapatan Project</option>
+                                                <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain
+                                                </option>
+                                                <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR
+                                                    dan Honorarium</option>
+                                                <option value="beban pemasaran">500002 - Beban Pemasaran</option>
+                                                <option value="beban konsumsi">500003 - Beban Konsumsi</option>
+                                                <option value="beban operasional projek">500004 - Beban Operasional
+                                                    Project</option>
+                                                <option value="beban sewa">500005 - Beban Sewa</option>
+                                                <option value="beban utilitas">500006 - Beban Utilitas</option>
+                                                <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
+                                                <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
+                                                <option value="beban penyusutan peralatan produksi">500009 - Beban
+                                                    Penyusutan Peralatan Produksi</option>
+                                                <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan
+                                                    Kendaraan</option>
+                                                <option value="beban administrasi">500011 - Beban Administrasi</option>
+                                                <option value="beban sosial">500012 - Beban Sosial</option>
+                                                <option value="beban lain-lain">500013 - Beban Lain-lain</option>
+                                                <option value="beban pajak">500014 - Beban Pajak</option>
+                                            </select></label>
+                                    </div>
+                                    <div class="ml-3">
+                                        <button id="printBtn" class="btn btn-primary mb-3" style="margin-right: 5px;"><i
+                                                class="bi bi-printer"></i></button>
+                                        <button id="exportExcelBtn" class="btn btn-success mb-3">Eksport Excel</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Table with stripped rows -->
-                            <div class="">
-                                <table class="table" style="width: 40%;">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-primary">Saldo Akhir</th>
-                                            <th class="table-primary">Saldo Setelah Penyesuaian</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Rp404.914.955</td>
-                                            <td>Rp404.914.955</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-primary text-center" data-type="date"
-                                                data-format="DD/MM/YYYY">Tanggal</th>
-                                            <th class="table-primary text-center">Kode Jurnal</th>
-                                            <th class="table-primary text-center">Kode Akun</th>
-                                            <th class="table-primary text-center">Nama Transaksi</th>
-                                            <th class="table-primary text-center">Arus Kas</th>
-                                            <th class="table-primary text-center">Debit</th>
-                                            <th class="table-primary text-center">Kredit</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center align-middle">01/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500003</td>
-                                            <td>Pembelian Makan dan Minum 31 Desember 2023</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 124.000</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">02/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500003</td>
-                                            <td>Pembelian Makan</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 30.000</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">03/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500006</td>
-                                            <td>Zoom Teleconference</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 268.108</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">05/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500006</td>
-                                            <td>Musik Stasiun IDTVMu</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 128.791</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">07/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500003</td>
-                                            <td>Gula Sachet, Le Minerale, Makan, dan Snack Box</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 251.700</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">08/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500006</td>
-                                            <td>Feesible jenius</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 10.000</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">09/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500003</td>
-                                            <td>Snack Pelepasan Magang</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 290.500</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">10/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500003</td>
-                                            <td>Makan Pelepasan Magang</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 204.000</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">11/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500003</td>
-                                            <td>Snack Pelepasan Magang</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 50.000</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">12/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500003</td>
-                                            <td>Makan dan Service Zhiyun</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 165.000</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center align-middle">12/01/2023</td>
-                                            <td class="text-center">JU</td>
-                                            <td>500008</td>
-                                            <td>Makan dan Service Zhiyun</td>
-                                            <td>Operasi</td>
-                                            <td>Rp 1.58.500</td>
-                                            <td>Rp&emsp;&emsp;-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
 
-                                <!-- End Table with stripped rows -->
+                            <div id="tabel buku besar">
+                                <table class="table" style="width: 100%; height: fit-content;" id="tabel buku besar">
+                                    <thead>
+                                        <!-- assets -->
+                                    </thead>
+                                    <tbody>
+                                        <table class="table" style="width: 40%;">
+                                            <thead>
+                                                <tr>
+                                                    <th class="table-primary">Saldo Akhir</th>
+                                                    <th class="table-primary">Saldo Setelah Penyesuaian</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Rp404.914.955</td>
+                                                    <td>Rp404.914.955</td>
+                                                </tr>
+                                                <tr style="border: none;">
+                                                    <td style="border: none;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="table-primary text-center" data-type="date"
+                                                        data-format="DD/MM/YYYY">Tanggal</th>
+                                                    <th class="table-primary text-center">Kode Jurnal</th>
+                                                    <th class="table-primary text-center">Kode Akun</th>
+                                                    <th class="table-primary text-center">Nama Transaksi</th>
+                                                    <th class="table-primary text-center">Arus Kas</th>
+                                                    <th class="table-primary text-center">Debit</th>
+                                                    <th class="table-primary text-center">Kredit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">01/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500003</td>
+                                                    <td>Pembelian Makan dan Minum 31 Desember 2023</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 124.000</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">02/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500003</td>
+                                                    <td>Pembelian Makan</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 30.000</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">03/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500006</td>
+                                                    <td>Zoom Teleconference</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 268.108</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">05/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500006</td>
+                                                    <td>Musik Stasiun IDTVMu</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 128.791</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">07/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500003</td>
+                                                    <td>Gula Sachet, Le Minerale, Makan, dan Snack Box</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 251.700</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">08/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500006</td>
+                                                    <td>Feesible jenius</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 10.000</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">09/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500003</td>
+                                                    <td>Snack Pelepasan Magang</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 290.500</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">10/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500003</td>
+                                                    <td>Makan Pelepasan Magang</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 204.000</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">11/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500003</td>
+                                                    <td>Snack Pelepasan Magang</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 50.000</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">12/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500003</td>
+                                                    <td>Makan dan Service Zhiyun</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 165.000</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">12/01/2023</td>
+                                                    <td class="text-center">JU</td>
+                                                    <td>500008</td>
+                                                    <td>Makan dan Service Zhiyun</td>
+                                                    <td>Operasi</td>
+                                                    <td>Rp 1.58.500</td>
+                                                    <td>Rp&emsp;&emsp;-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                             </div>
+                            <!-- End Table with stripped rows -->
+                            </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+            </div>
+            </div>
         </section>
 
     </main><!-- End #main -->
@@ -388,7 +408,84 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script>
+        // Fungsi untuk mencetak tabel
+        document.getElementById('printBtn').addEventListener('click', function () {
+            var element = document.getElementById('tabel buku besar');
+            var selectedAccount = document.getElementById('nama_akun').value; // Get the selected account
+            var win = window.open('', '', 'height=700,width=700');
+            win.document.write('<html><head><title>Cetak Tabel Buku Besar</title>');
+            // Menambahkan CSS untuk border tabel
+            win.document.write('<style>');
+            win.document.write('table { border-collapse: collapse; width: 100%; }');
+            win.document.write('th, td { border: 1px solid black; padding: 8px; text-align: left; }');
+            win.document.write('th { background-color: #f2f2f2; }'); // Warna latar belakang untuk header
+            win.document.write('h2 { text-align: center; }'); // Center the title
+            win.document.write('</style>');
+            win.document.write('</head><body>');
 
+            // Include title and selected account in the printed document
+            win.document.write('<h2>Buku Besar</h2>'); // Title for the printed document
+            win.document.write('<h4>Kode Akun : ' + selectedAccount + '</h4>'); // Center the account code
+            win.document.write(element.outerHTML);
+            win.document.write('</body></html>');
+            win.document.close();
+            win.print();
+        });
+
+        // Fungsi untuk mengekspor tabel ke Excel
+        document.getElementById('exportExcelBtn').addEventListener('click', function () {
+            var element = document.getElementById('tabel buku besar');
+            var selectedAccount = document.getElementById('nama_akun').value; // Get the selected account
+
+            // Create a new row for the title
+            var titleRow = document.createElement("tr");
+            var titleCell = document.createElement("td");
+            titleCell.colSpan = 7; // Adjust the colspan based on your table structure
+            titleCell.innerText = 'Buku Besar';
+            titleCell.style.fontWeight = 'bold'; // Make the title bold
+            titleCell.style.fontSize = '16px'; // Adjust font size if needed
+            titleCell.style.textAlign = 'center'; // Center the title
+            titleRow.appendChild(titleCell);
+
+            // Create a new row for the selected account
+            var accountRow = document.createElement("tr");
+            var accountCell = document.createElement("td");
+            accountCell.colSpan = 7; // Adjust the colspan based on your table structure
+            accountCell.innerText = 'Kode Akun : ' + selectedAccount;
+            accountCell.style.textAlign = 'center'; // Center the account code
+            accountRow.appendChild(accountCell);
+
+            // Append the title row and account row to the table before exporting
+            var tbody = element.querySelector("tbody");
+            tbody.insertBefore(accountRow, tbody.firstChild);
+            tbody.insertBefore(titleRow, tbody.firstChild);
+
+            // Convert the table to a workbook
+            var wb = XLSX.utils.table_to_book(element, { sheet: "Data" });
+
+            // Set column widths
+            var ws = wb.Sheets["Data"];
+            ws['!cols'] = [
+                { wpx: 100 }, // Width for Date column
+                { wpx: 100 }, // Width for Kode Jurnal column
+                { wpx: 100 }, // Width for Kode Akun column
+                { wpx: 300 }, // Width for Nama Transaksi column
+                { wpx: 100 }, // Width for Arus Kas column
+                { wpx: 100 }, // Width for Debit column
+                { wpx: 100 }  // Width for Kredit column
+            ];
+
+            // Write the file
+            XLSX.writeFile(wb, 'tabel buku besar.xlsx');
+
+            // Remove the title and account rows after exporting to keep the original table intact
+            tbody.removeChild(accountRow);
+            tbody.removeChild(titleRow);
+        });
+    </script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
