@@ -167,19 +167,28 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="card-title">
+                            <div class="card-title text-right d-flex justify-content-end">
+                                <button id="printBtn" class="btn btn-primary mb-3"
+                                    style="margin-right: 10px;">Cetak</button>
+                                <button id="exportExcelBtn" class="btn btn-success mb-3">Ekspor ke Excel</button>
                             </div>
                             <!-- Table with stripped rows -->
-                            <table class="table table-bordered" style="width: 100%; height: fit-content;">
+                            <table class="table table-bordered" style="width: 100%; height: fit-content;"
+                                id="tabel neraca">
                                 <thead>
-                                    <tr>
-                                        <th colspan="5" class="bold">ASSET</th>
-                                        <th rowspan="1" class="bold"></th>
-                                        <th colspan="5" class="bold">KEWAJIBAN</th>
+                                    <tr style="border: none;">
+                                        <th colspan="11" style="text-align: center; border: none;">
+                                            <h4>LAPORAN POSISI KEUANGAN</h4>
+                                        </th>
                                     </tr>
                                     <!-- assets -->
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <th colspan="5">ASSET</th>
+                                        <th rowspan="1" class="bold"></th>
+                                        <th colspan="5">KEWAJIBAN</th>
+                                    </tr>
                                     <tr>
                                         <th colspan="2">Aset Lancar</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
@@ -196,7 +205,8 @@
                                         <td>Kas</td>
                                         <td>D</td>
                                         <td>Rp 404.914.955</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>200100</td>
                                         <td>Utang Usaha</td>
                                         <td>K</td>
@@ -208,7 +218,8 @@
                                         <td>Kas di Bank</td>
                                         <td>D</td>
                                         <td>Rp 1.209.590.146</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>200200</td>
                                         <td>Utang Gaji</td>
                                         <td>K</td>
@@ -220,7 +231,8 @@
                                         <td>Investasi</td>
                                         <td>D</td>
                                         <td>Rp 6.618.712</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>200300</td>
                                         <td>Pendapatan diterima dimuka</td>
                                         <td>K</td>
@@ -232,32 +244,38 @@
                                         <td>Piutang Klien</td>
                                         <td>D</td>
                                         <td>Rp 12.210.020</td>
-                                        <td></td><td></td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        
+
                                         <td>100200</td>
                                         <td>Perlengkapan Habis Pakai</td>
                                         <td>D</td>
                                         <td>Rp&emsp;&emsp;-</td>
-                                        <td></td><td></td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        
+
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td></td><td></td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -274,13 +292,15 @@
                                         <th style="width: fit-content;font-weight: normal;">Rp&emsp;&emsp;-</th>
                                     </tr>
                                     <tr>
-                                        
+
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td></td><td></td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -303,7 +323,8 @@
                                         <td>Peralatan Produksi</td>
                                         <td>D</td>
                                         <td>Rp 627.873.803</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>200400</td>
                                         <td>Utang Bank</td>
                                         <td>K</td>
@@ -315,7 +336,8 @@
                                         <td>Akumulasi depresiasi peralatan produksi</td>
                                         <td>K</td>
                                         <td>Rp 173.381.468</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -327,7 +349,8 @@
                                         <td>Tanah</td>
                                         <td>D</td>
                                         <td>Rp&emsp;&emsp;-</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -335,23 +358,25 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        
+
                                         <td>100700</td>
                                         <td>Kendaraan</td>
                                         <td>D</td>
                                         <td>Rp 10.000.000</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <th colspan="3" style="width: fit-content;">Total Kewajiban</th>
                                         <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
                                     </tr>
-                                    
+
                                     <tr>
                                         <td>100710</td>
                                         <td>Akumulasi depresiasi kendaraan</td>
                                         <td>K</td>
                                         <td>Rp 40.000.000</td>
-                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -379,7 +404,7 @@
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th colspan="5" style="width: fit-content;">EKUITAS</th>
                                     </tr>
-                                    
+
                                     <tr>
                                         <th style="height: 30px ;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
@@ -394,7 +419,7 @@
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;">Rp 1.959.414.213</th>
                                     </tr>
-                                    
+
                                     <tr>
                                         <th style="height: 30px ;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
@@ -495,6 +520,34 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script>
+        // Fungsi untuk mencetak tabel
+        document.getElementById('printBtn').addEventListener('click', function () {
+            var element = document.getElementById('tabel neraca');
+            var win = window.open('', '', 'height=700,width=700');
+            win.document.write('<html><head><title>Cetak Tabel Neraca</title>');
+            // Menambahkan CSS untuk border tabel
+            win.document.write('<style>');
+            win.document.write('table { border-collapse: collapse; width: 100%; }');
+            win.document.write('th, td { border: 1px solid black; padding: 8px; text-align: left; }');
+            win.document.write('th { background-color: #f2f2f2; }'); // Warna latar belakang untuk header
+            win.document.write('</style>');
+            win.document.write('</head><body >');
+            win.document.write(element.outerHTML);
+            win.document.write('</body></html>');
+            win.document.close();
+            win.print();
+        });
+
+        // Fungsi untuk mengekspor tabel ke Excel
+        document.getElementById('exportExcelBtn').addEventListener('click', function () {
+            var element = document.getElementById('tabel neraca');
+            var wb = XLSX.utils.table_to_book(element, { sheet: "Data" });
+            XLSX.writeFile(wb, 'tabel neraca.xlsx');
+        });
+    </script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
