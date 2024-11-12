@@ -105,49 +105,49 @@
 
     </header><!-- End Header -->
 
-<!-- ======= Sidebar ======= -->
-<aside id="sidebar" class="sidebar">
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+        <ul class="sidebar-nav" id="sidebar-nav">
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="dashboard.html">
-                <i class="bi bi-grid"></i>
-                <span>Dashboard</span>
-            </a>
-        </li><!-- End Dashboard Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="dashboard.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="akun.html">
-                <i class="bi bi-menu-button-wide"></i><span>Akun</span>
-            </a>
-        </li><!-- End Akun Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="akun.html">
+                    <i class="bi bi-menu-button-wide"></i><span>Akun</span>
+                </a>
+            </li><!-- End Akun Nav -->
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="saldo_awal.html">
-                <i class="bi bi-currency-dollar"></i><span>Saldo Awal Tahun</span>
-            </a>
-        </li><!-- End Saldo Awal Tahun Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="saldo_awal.html">
+                    <i class="bx bx-coin-stack"></i><span>Saldo Awal Tahun</span>
+                </a>
+            </li><!-- End Saldo Awal Tahun Nav -->
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="transaksi.html">
-                <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
-            </a>
-        </li><!-- End Jurnal Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="transaksi.html">
+                    <i class="bi bi-cash"></i><span>Transaksi Jurnal</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="bukubesar.html">
-                <i class="ri-book-2-line"></i><span>Buku Besar</span>
-            </a>
-        </li><!-- End Jurnal Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="bukubesar.html">
+                    <i class="ri-book-2-line"></i><span>Buku Besar</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="lapkeuangan.html">
-                <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
-            </a>
-        </li><!-- End Jurnal Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="lapkeuangan.html">
+                    <i class="bi bi-clipboard-data"></i><span>Laporan Keuangan</span>
+                </a>
+            </li><!-- End Jurnal Nav -->
 
-</aside><!-- End Sidebar-->
+    </aside><!-- End Sidebar-->
 
     <main id="main" class="main">
 
@@ -192,785 +192,101 @@
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                     </tr>
                                     <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun" name="nama_akun"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement = document.getElementById('nama_akun');
-                                            const inputField = document.getElementById('selected-option');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName = accountNames[selectedCode];
-
-                                                // Update the input field with the account name
-                                                inputField.value = accountName;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: 8%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element = document.getElementById('nama_akun'); // Ensure this ID matches your select element
-                                            const input = document.getElementById('opsinama');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType = akunData[selectedCode];
-
-                                                // Update the input field with the account type
-                                                input.value = akunType;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akunn" name="nama_akunn"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="200100">200100</option>
-                                                    <option value="200200">200200</option>
-                                                    <option value="200300">200300</option>
-                                                    <option value="200400">200400</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-optionn" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElementn = document.getElementById('nama_akunn');
-                                            const inputFieldn = document.getElementById('selected-optionn');
-
-                                            // Create an object to map codes to account names
-                                            const accountNamesn = {
-                                                '200100': 'Utang usaha',
-                                                '200200': 'Utang Gaji',
-                                                '200300': 'Pendapatan diterima dimuka',
-                                                '200400': 'Utang Bank'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElementn.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCoden = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountNamen = accountNamesn[selectedCoden];
-
-                                                // Update the input field with the account name
-                                                inputFieldn.value = accountNamen;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width:8%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinaman" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const elementn = document.getElementById('nama_akunn'); // Ensure this ID matches your select element
-                                            const inputn = document.getElementById('opsinaman');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunDatan = {
-                                                '200100': 'K',
-                                                '200200': 'K',
-                                                '200300': 'K',
-                                                '200400': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            elementn.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCoden = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunTypen = akunDatan[selectedCoden];
-
-                                                // Update the input field with the account type
-                                                inputn.value = akunTypen;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                    </tr>
-
-                                    <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun1" name="nama_akun1"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option1" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement1 = document.getElementById('nama_akun1');
-                                            const inputField1 = document.getElementById('selected-option1');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames1 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement1.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode1 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName1 = accountNames1[selectedCode1];
-
-                                                // Update the input field with the account name
-                                                inputField1.value = accountName1;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama1" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element1 = document.getElementById('nama_akun1'); // Ensure this ID matches your select element
-                                            const input1 = document.getElementById('opsinama1');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData1 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element1.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode1 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType1 = akunData1[selectedCode1];
-
-                                                // Update the input field with the account type
-                                                input1.value = akunType1;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akuna" name="nama_akun"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="200100">200100</option>
-                                                    <option value="200200">200200</option>
-                                                    <option value="200300">200300</option>
-                                                    <option value="200400">200400</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-optiona" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElementa = document.getElementById('nama_akuna');
-                                            const inputFielda = document.getElementById('selected-optiona');
-
-                                            // Create an object to map codes to account names
-                                            const accountNamesa = {
-                                                '200100': 'Utang usaha',
-                                                '200200': 'Utang Gaji',
-                                                '200300': 'Pendapatan diterima dimuka',
-                                                '200400': 'Utang Bank'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElementa.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodea = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountNamea = accountNamesa[selectedCodea];
-
-                                                // Update the input field with the account name
-                                                inputFielda.value = accountNamea;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinamaa" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const elementa = document.getElementById('nama_akuna'); // Ensure this ID matches your select element
-                                            const inputa = document.getElementById('opsinamaa');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunDataa = {
-                                                '200100': 'K',
-                                                '200200': 'K',
-                                                '200300': 'K',
-                                                '200400': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            elementa.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodea = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunTypea = akunDataa[selectedCodea];
-
-                                                // Update the input field with the account type
-                                                inputa.value = akunTypea;
-                                            });
-                                        </script>
-
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                    </tr>
-
-
-                                    <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun2" name="nama_akun2"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option2" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement2 = document.getElementById('nama_akun2');
-                                            const inputField2 = document.getElementById('selected-option2');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames2 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement2.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode2 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName2 = accountNames2[selectedCode2];
-
-                                                // Update the input field with the account name
-                                                inputField2.value = accountName2;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama2" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element2 = document.getElementById('nama_akun2'); // Ensure this ID matches your select element
-                                            const input2 = document.getElementById('opsinama2');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData2 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element2.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode2 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType2 = akunData2[selectedCode2];
-
-                                                // Update the input field with the account type
-                                                input2.value = akunType2;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akunb" name="nama_akun"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="200100">200100</option>
-                                                    <option value="200200">200200</option>
-                                                    <option value="200300">200300</option>
-                                                    <option value="200400">200400</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-optionb" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElementb = document.getElementById('nama_akunb');
-                                            const inputFieldb = document.getElementById('selected-optionb');
-
-                                            // Create an object to map codes to account names
-                                            const accountNamesb = {
-                                                '200100': 'Utang usaha',
-                                                '200200': 'Utang Gaji',
-                                                '200300': 'Pendapatan diterima dimuka',
-                                                '200400': 'Utang Bank'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElementb.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodeb = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountNameb = accountNamesb[selectedCodeb];
-
-                                                // Update the input field with the account name
-                                                inputFieldb.value = accountNameb;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinamab" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const elementb = document.getElementById('nama_akunb'); // Ensure this ID matches your select element
-                                            const inputb = document.getElementById('opsinamab');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunDatab = {
-                                                '200100': 'K',
-                                                '200200': 'K',
-                                                '200300': 'K',
-                                                '200400': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            elementb.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodeb = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunTypeb = akunDatab[selectedCodeb];
-
-                                                // Update the input field with the account type
-                                                inputb.value = akunTypeb;
-                                            });
-                                        </script>
-
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                    </tr>
-
-                                    <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun3" name="nama_akun1"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option3" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement3 = document.getElementById('nama_akun3');
-                                            const inputField3 = document.getElementById('selected-option3');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames3 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement3.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode3 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName3 = accountNames3[selectedCode3];
-
-                                                // Update the input field with the account name
-                                                inputField3.value = accountName3;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama3" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element3 = document.getElementById('nama_akun3'); // Ensure this ID matches your select element
-                                            const input3 = document.getElementById('opsinama3');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData3 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element3.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode3 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType3 = akunData3[selectedCode3];
-
-                                                // Update the input field with the account type
-                                                input3.value = akunType3;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                    </tr>
-
-                                    <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun4" name="nama_akun1"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                    </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option4" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement4 = document.getElementById('nama_akun4');
-                                            const inputField4 = document.getElementById('selected-option4');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames4 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement4.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode4 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName4 = accountNames4[selectedCode4];
-
-                                                // Update the input field with the account name
-                                                inputField4.value = accountName4;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama4" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element4 = document.getElementById('nama_akun4'); // Ensure this ID matches your select element
-                                            const input4 = document.getElementById('opsinama4');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData4 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element4.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode4 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType4 = akunData4[selectedCode4];
-
-                                                // Update the input field with the account type
-                                                input4.value = akunType4;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <td>100001</td>
+                                        <td>Kas</td>
+                                        <td>D</td>
+                                        <td>Rp 404.914.955</td>
+                                        <td></td><td></td>
+                                        <td>200100</td>
+                                        <td>Utang Usaha</td>
+                                        <td>K</td>
+                                        <td>Rp&emsp;&emsp;-</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <th style="height: 30px ;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <td>100002</td>
+                                        <td>Kas di Bank</td>
+                                        <td>D</td>
+                                        <td>Rp 1.209.590.146</td>
+                                        <td></td><td></td>
+                                        <td>200200</td>
+                                        <td>Utang Gaji</td>
+                                        <td>K</td>
+                                        <td>Rp&emsp;&emsp;-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>100003</td>
+                                        <td>Investasi</td>
+                                        <td>D</td>
+                                        <td>Rp 6.618.712</td>
+                                        <td></td><td></td>
+                                        <td>200300</td>
+                                        <td>Pendapatan diterima dimuka</td>
+                                        <td>K</td>
+                                        <td>Rp&emsp;&emsp;-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>100100</td>
+                                        <td>Piutang Klien</td>
+                                        <td>D</td>
+                                        <td>Rp 12.210.020</td>
+                                        <td></td><td></td>
+                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>100200</td>
+                                        <td>Perlengkapan Habis Pakai</td>
+                                        <td>D</td>
+                                        <td>Rp&emsp;&emsp;-</td>
+                                        <td></td><td></td>
+                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td><td></td>
+                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th colspan="2" style="width: fit-content;">Total Asset Lancar</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
+                                        <th style="width: fit-content;font-weight: normal;">Rp 1.633.333.833</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th colspan="2" style="width: fit-content;">Total Kewajiban Lancar</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
+                                        <th style="width: fit-content;font-weight: normal;">Rp&emsp;&emsp;-</th>
                                     </tr>
-
                                     <tr>
-                                        <th style="height: 30px ;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td><td></td>
+                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                                 <tbody>
-
                                     <tr>
                                         <th colspan="2" style="width: fit-content;">Aset Lancar</th>
                                         <th style="width: fit-content;font-weight: normal;height: fit-content;"></th>
@@ -983,594 +299,64 @@
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                     </tr>
                                     <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun0" name="nama_akun0"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option0" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement0 = document.getElementById('nama_akun0');
-                                            const inputField0 = document.getElementById('selected-option0');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames0 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement0.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode0 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName0 = accountNames0[selectedCode0];
-
-                                                // Update the input field with the account name
-                                                inputField0.value = accountName0;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama0" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element0 = document.getElementById('nama_akun0'); // Ensure this ID matches your select element
-                                            const input0 = document.getElementById('opsinama0');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData0 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element0.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode0 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType0 = akunData0[selectedCode0];
-
-                                                // Update the input field with the account type
-                                                input0.value = akunType0;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akune" name="nama_akune"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="200100">200100</option>
-                                                    <option value="200200">200200</option>
-                                                    <option value="200300">200300</option>
-                                                    <option value="200400">200400</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-optione" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElemente = document.getElementById('nama_akune');
-                                            const inputFielde = document.getElementById('selected-optione');
-
-                                            // Create an object to map codes to account names
-                                            const accountNamese = {
-                                                '200100': 'Utang usaha',
-                                                '200200': 'Utang Gaji',
-                                                '200300': 'Pendapatan diterima dimuka',
-                                                '200400': 'Utang Bank',
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElemente.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodee = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountNamee = accountNamese[selectedCodee];
-
-                                                // Update the input field with the account name
-                                                inputFielde.value = accountNamee;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinamae" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const elemente = document.getElementById('nama_akune'); // Ensure this ID matches your select element
-                                            const inpute = document.getElementById('opsinamae');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunDatae = {'200100': 'K',
-                                                '200200': 'K',
-                                                '200300': 'K',
-                                                '200400': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            elemente.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodee = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunTypee = akunDatae[selectedCodee];
-
-                                                // Update the input field with the account type
-                                                inpute.value = akunTypee;
-                                            });
-                                        </script>
-
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <td>100500</td>
+                                        <td>Peralatan Produksi</td>
+                                        <td>D</td>
+                                        <td>Rp 627.873.803</td>
+                                        <td></td><td></td>
+                                        <td>200400</td>
+                                        <td>Utang Bank</td>
+                                        <td>K</td>
+                                        <td>Rp&emsp;&emsp;-</td>
+                                        <td></td>
                                     </tr>
-
                                     <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun01" name="nama_akun01"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option01" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement01 = document.getElementById('nama_akun01');
-                                            const inputField01 = document.getElementById('selected-option01');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames01 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement01.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode01 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName01 = accountNames01[selectedCode01];
-
-                                                // Update the input field with the account name
-                                                inputField01.value = accountName01;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama01" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element01 = document.getElementById('nama_akun01'); // Ensure this ID matches your select element
-                                            const input01 = document.getElementById('opsinama01');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData01 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element01.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode01 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType01 = akunData01[selectedCode01];
-
-                                                // Update the input field with the account type
-                                                input01.value = akunType01;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <td>100510</td>
+                                        <td>Akumulasi depresiasi peralatan produksi</td>
+                                        <td>K</td>
+                                        <td>Rp 173.381.468</td>
+                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
-
-
                                     <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun02" name="nama_akun02"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option02" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement02 = document.getElementById('nama_akun02');
-                                            const inputField02 = document.getElementById('selected-option02');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames02 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement02.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode02 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName02 = accountNames02[selectedCode02];
-
-                                                // Update the input field with the account name
-                                                inputField02.value = accountName02;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama02" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element02 = document.getElementById('nama_akun02'); // Ensure this ID matches your select element
-                                            const input02 = document.getElementById('opsinama02');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData02 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element02.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode02 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType02 = akunData02[selectedCode02];
-
-                                                // Update the input field with the account type
-                                                input02.value = akunType02;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th colspan="2" style="width: fit-content;">Total Kewajiban Jangka Panjang</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
+                                        <td>100600</td>
+                                        <td>Tanah</td>
+                                        <td>D</td>
+                                        <td>Rp&emsp;&emsp;-</td>
+                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
-
                                     <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun03" name="nama_akun1"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option03" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement03 = document.getElementById('nama_akun03');
-                                            const inputField03 = document.getElementById('selected-option03');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames03 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement03.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode03 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName03 = accountNames03[selectedCode03];
-
-                                                // Update the input field with the account name
-                                                inputField03.value = accountName03;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama03" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element03 = document.getElementById('nama_akun03'); // Ensure this ID matches your select element
-                                            const input03 = document.getElementById('opsinama03');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData03 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element03.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode03 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType03 = akunData03[selectedCode03];
-
-                                                // Update the input field with the account type
-                                                input03.value = akunType03;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                    </tr>
-
-                                    <tr>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akun04" name="nama_akun04"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="100001">100001</option>
-                                                    <option value="100002">100002</option>
-                                                    <option value="100003">100003</option>
-                                                    <option value="100100">100100</option>
-                                                    <option value="100200">100200</option>
-                                                    <option value="100500">100500</option>
-                                                    <option value="100510">100510</option>
-                                                    <option value="100600">100600</option>
-                                                    <option value="100700">100700</option>
-                                                    <option value="100710">100710</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-option04" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElement04 = document.getElementById('nama_akun04');
-                                            const inputField04 = document.getElementById('selected-option04');
-
-                                            // Create an object to map codes to account names
-                                            const accountNames04 = {
-                                                '100001': 'Kas',
-                                                '100002': 'Kas Bank',
-                                                '100003': 'Investasi',
-                                                '100100': 'Piutang Klien',
-                                                '100200': 'Perlengkapan habis pakai',
-                                                '100500': 'Peralatan produksi',
-                                                '100510': 'Akumulasi depresiasi perlatan produksi',
-                                                '100600': 'Tanah',
-                                                '100700': 'Kendaraan',
-                                                '100710': 'Akumulasi depresiasi kendaraan'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElement04.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode04 = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountName04 = accountNames04[selectedCode04];
-
-                                                // Update the input field with the account name
-                                                inputField04.value = accountName04;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinama04" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const element04 = document.getElementById('nama_akun04'); // Ensure this ID matches your select element
-                                            const input04 = document.getElementById('opsinama04');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunData04 = {
-                                                '100001': 'D',
-                                                '100002': 'D',
-                                                '100003': 'D',
-                                                '100100': 'D',
-                                                '100200': 'D',
-                                                '100500': 'D',
-                                                '100510': 'K',
-                                                '100600': 'D',
-                                                '100700': 'D',
-                                                '100710': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            element04.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCode04 = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunType04 = akunData04[selectedCode04];
-
-                                                // Update the input field with the account type
-                                                input04.value = akunType04;
-                                            });
-                                        </script>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        
+                                        <td>100700</td>
+                                        <td>Kendaraan</td>
+                                        <td>D</td>
+                                        <td>Rp 10.000.000</td>
+                                        <td></td><td></td>
+                                        <td></td>
                                         <th colspan="3" style="width: fit-content;">Total Kewajiban</th>
                                         <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>100710</td>
+                                        <td>Akumulasi depresiasi kendaraan</td>
+                                        <td>K</td>
+                                        <td>Rp 40.000.000</td>
+                                        <td></td><td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <th style="height: 30px;font-weight: normal;"></th>
@@ -1589,270 +375,11 @@
                                         <th style="height: 30px;font-weight: normal;"></th>
                                         <th colspan="2" style="width: fit-content;">Total Asset Lengkap</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
+                                        <th style="width: fit-content;font-weight: normal;">Rp 424.492.335</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th colspan="5" style="width: fit-content;">EKUITAS</th>
                                     </tr>
-                                    <tr>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akunf" name="nama_akunf"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="200100">200100</option>
-                                                    <option value="200200">200200</option>
-                                                    <option value="200300">200300</option>
-                                                    <option value="200400">200400</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-optionf" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElementf = document.getElementById('nama_akunf');
-                                            const inputFieldf = document.getElementById('selected-optionf');
-
-                                            // Create an object to map codes to account names
-                                            const accountNamesf = {
-                                                '200100': 'Utang usaha',
-                                                '200200': 'Utang Gaji',
-                                                '200300': 'Pendapatan diterima dimuka',
-                                                '200400': 'Utang Bank'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElementf.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodef = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountNamef = accountNamesf[selectedCodef];
-
-                                                // Update the input field with the account name
-                                                inputFieldf.value = accountNamef;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinamaf" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const elementf = document.getElementById('nama_akunf'); // Ensure this ID matches your select element
-                                            const inputf = document.getElementById('opsinamaf');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunDataf = {
-                                                '200100': 'K',
-                                                '200200': 'K',
-                                                '200300': 'K',
-                                                '200400': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            elementf.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodef = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunTypef = akunDataf[selectedCodef];
-
-                                                // Update the input field with the account type
-                                                inputf.value = akunTypef;
-                                            });
-                                        </script>
-
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-
-                                    </tr>
-                                    <tr>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akung" name="nama_akung"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="200100">200100</option>
-                                                    <option value="200200">200200</option>
-                                                    <option value="200300">200300</option>
-                                                    <option value="200400">200400</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-optiong" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElementg = document.getElementById('nama_akung');
-                                            const inputFieldg = document.getElementById('selected-optiong');
-
-                                            // Create an object to map codes to account names
-                                            const accountNamesg = {
-                                                '200100': 'Utang usaha',
-                                                '200200': 'Utang Gaji',
-                                                '200300': 'Pendapatan diterima dimuka',
-                                                '200400': 'Utang Bank'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElementg.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodeg = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountNameg = accountNamesg[selectedCodeg];
-
-                                                // Update the input field with the account name
-                                                inputFieldg.value = accountNameg;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinamag" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const elementg = document.getElementById('nama_akung'); // Ensure this ID matches your select element
-                                            const inputg = document.getElementById('opsinamag');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunDatag = {
-                                                '200100': 'K',
-                                                '200200': 'K',
-                                                '200300': 'K',
-                                                '200400': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            elementg.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodeg = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunTypeg = akunDatag[selectedCodeg];
-
-                                                // Update the input field with the account type
-                                                inputg.value = akunTypeg;
-                                            });
-                                        </script>
-
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                    </tr>
-                                    <tr>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th style="height: 30px;font-weight: normal;"></th>
-                                        <th>
-                                            <!-- ini bagian pilihan -->
-                                            <div class="col-lg-6">
-                                                <select class="col-form-label" id="nama_akuni" name="nama_akuni"
-                                                    style="border: none;" required>
-                                                    <!-- options will be populated here -->
-                                                    <option selected>Pilih Kode Akun</option>
-                                                    <option value="200100">200100</option>
-                                                    <option value="200200">200200</option>
-                                                    <option value="200300">200300</option>
-                                                    <option value="200400">200400</option>
-                                                </select>
-                                            </div>
-                                        </th>
-                                        <th style="width: 31%;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="selected-optioni" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const selectElementi = document.getElementById('nama_akuni');
-                                            const inputFieldi = document.getElementById('selected-optioni');
-
-                                            // Create an object to map codes to account names
-                                            const accountNamesi = {
-                                                '200100': 'Utang usaha',
-                                                '200200': 'Utang Gaji',
-                                                '200300': 'Pendapatan diterima dimuka',
-                                                '200400': 'Utang Bank'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            selectElementi.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodei = this.value;
-
-                                                // Get the corresponding account name from the object
-                                                const accountNamei = accountNamesi[selectedCodei];
-
-                                                // Update the input field with the account name
-                                                inputFieldi.value = accountNamei;
-                                            });
-                                        </script>
-                                        <!-- font-weight agar tidak bold -->
-                                        <th style="width: fit-content;font-weight: normal; height: fit-content;">
-                                            <!-- bagian input pilihan -->
-                                            <input type="text" id="opsinamai" style="border: none;"
-                                                class="form-control-plaintext" readonly>
-                                        </th>
-                                        <script>
-                                            // Get the select element and the input field
-                                            const elementi = document.getElementById('nama_akuni'); // Ensure this ID matches your select element
-                                            const inputi = document.getElementById('opsinamai');
-
-                                            // Create an object to map codes to account types (D/K)
-                                            const akunDatai = {
-                                                '200100': 'K',
-                                                '200200': 'K',
-                                                '200300': 'K',
-                                                '200400': 'K'
-                                            };
-
-                                            // Add an event listener to the select element
-                                            elementi.addEventListener('change', function () {
-                                                // Get the selected option's value (code)
-                                                const selectedCodei = this.value;
-
-                                                // Get the corresponding account type from the object
-                                                const akunTypei = akunDatai[selectedCodei];
-
-                                                // Update the input field with the account type
-                                                inputi.value = akunTypei;
-                                            });
-                                        </script>
-
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
-                                        <th style="width: fit-content;font-weight: normal;"></th>
-                                    </tr>
-
+                                    
                                     <tr>
                                         <th style="height: 30px ;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
@@ -1861,11 +388,53 @@
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
 
+                                        <th style="width: fit-content;font-weight: normal;">300100</th>
+                                        <th style="width: fit-content;font-weight: normal;">Modal</th>
+                                        <th style="width: fit-content;font-weight: normal;">K</th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;">Rp 1.959.414.213</th>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th style="height: 30px ;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
+
+                                        <th style="width: fit-content;font-weight: normal;">300200</th>
+                                        <th style="width: fit-content;font-weight: normal;">Deviden</th>
+                                        <th style="width: fit-content;font-weight: normal;">D</th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;">Rp&emsp;&emsp;-</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="height: 30px ;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+
+                                        <th style="width: fit-content;font-weight: normal;">300500</th>
+                                        <th style="width: fit-content;font-weight: normal;">Laba Ditahan</th>
+                                        <th style="width: fit-content;font-weight: normal;">K</th>
+                                        <th style="width: fit-content;font-weight: normal;"></th>
+                                        <th style="width: fit-content;font-weight: normal;">Rp 98.411.955</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <th style="background-color: salmon; height: 30px;font-weight: normal;"></th>
@@ -1873,29 +442,17 @@
                                         <th colspan="2" style="background-color: salmon; width: fit-content;">Total
                                             Asset</th>
                                         <th style="background-color: salmon; width: fit-content;font-weight: normal;">
-                                            Rp1.204.914.955</th>
+                                            Rp 2.057.826.168</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="background-color: salmon; height: 30px;font-weight: normal;"></th>
                                         <th style="background-color: salmon; height: 30px;font-weight: normal;"></th>
                                         <th colspan="2" style="background-color: salmon; height: 30px;">Total Kewajiban
                                             dan Ekuinitas</th>
                                         <th style="background-color: salmon; height: 30px;font-weight: normal;">
-                                            Rp1.204.914.955</th>
+                                            Rp 2.057.826.168</th>
                                     </tr>
                                     <tr>
                                         <th colspan="11" style="height: 40px ;font-weight: normal;"></th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="6" style="height: 30px;font-weight: normal;"></th>
-                                        <th colspan="2"
-                                            style="height: 30px;font-weight: normal;background-color: greenyellow;">
-                                            BALANCE</th>
-                                        <th colspan="3" style="height: 30px;font-weight: normal;"></th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="6" style="height: 30px;font-weight: normal;"></th>
-                                        <th colspan="2" style="height: 30px;font-weight: normal;">Rp.</th>
-                                        <th colspan="3" style="height: 30px;font-weight: normal;"></th>
                                     </tr>
                                 </tbody>
 
