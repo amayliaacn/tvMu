@@ -417,19 +417,48 @@
             var selectedAccount = document.getElementById('nama_akun').value; // Get the selected account
             var win = window.open('', '', 'height=700,width=700');
             win.document.write('<html><head><title>Cetak Tabel Buku Besar</title>');
-            // Menambahkan CSS untuk border tabel
+            // CSS untuk border tabel
             win.document.write('<style>');
             win.document.write('table { border-collapse: collapse; width: 100%; }');
             win.document.write('th, td { border: 1px solid black; padding: 8px; text-align: left; }');
             win.document.write('th { background-color: #f2f2f2; }'); // Warna latar belakang untuk header
             win.document.write('h2 { text-align: center; }'); // Center the title
+            win.document.write('img { display: block; margin: 0 auto; }'); // Center the image
             win.document.write('</style>');
             win.document.write('</head><body>');
 
-            // Include title and selected account in the printed document
-            win.document.write('<h2>Buku Besar</h2>'); // Title for the printed document
+            // kop surat
+            win.document.write('<table width="100%">');
+            win.document.write('<tr>');
+            win.document.write('<td style="text-align: center; border:none;"><img src="assets/img/logo_baru.png" width="100" alt="Logo"></td>'); // Ganti dengan jalur gambar yang sesuai
+            win.document.write('<td style="text-align: center; border:none;"><h2>Buku Besar</h2></td>');
+            win.document.write('<td style="text-align: center; border:none;"><h4>Periode Tahun 2024</h4></td>');
+            win.document.write('</tr>');
+            win.document.write('</table>');
+            win.document.write('<hr>'); // Garis pemisah antara kop surat dan tabel
             win.document.write('<h4>Kode Akun : ' + selectedAccount + '</h4>'); // Center the account code
+
             win.document.write(element.outerHTML);
+
+            // footer
+            win.document.write('<div class="footer">');
+            win.document.write('<table width="100%">');
+            win.document.write('<tr style="border:none">');
+            win.document.write('<td style="text-align: center; width: 50%; border:none">');
+            win.document.write('<p>Manajer</p>');
+            win.document.write('<br><br><br>'); // Ruang untuk tanda tangan
+            win.document.write('<p>(Nama Manajer)</p>'); // Ganti dengan nama kepala bidang
+            win.document.write('</td>');
+            win.document.write('<p style="text-align: right">Yogyakarta, 10 Januari 2025</p>');
+            win.document.write('<td style="text-align: center; width: 50%; border:none">');
+            win.document.write('<p> Keuangan TvMu</p>');
+            win.document.write('<br><br><br>'); // Ruang untuk tanda tangan
+            win.document.write('<p>(Nama Keuangan TvMu)</p>'); // Ganti dengan nama manajer
+            win.document.write('</td>');
+            win.document.write('</tr>');
+            win.document.write('</table>');
+            win.document.write('</div>');
+
             win.document.write('</body></html>');
             win.document.close();
             win.print();
