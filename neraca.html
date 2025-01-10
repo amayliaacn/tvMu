@@ -262,7 +262,6 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -279,12 +278,12 @@
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th colspan="2" style="width: fit-content;">Total Asset Lancar</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp 1.633.333.833</th>
+                                        <th style="width: fit-content;font-weight: normal;text-align: right;">Rp 1.633.333.833</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th colspan="2" style="width: fit-content;">Total Kewajiban Lancar</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp 0</th>
+                                        <th style="width: fit-content;font-weight: normal;text-align: right;">Rp 0</th>
                                     </tr>
                                     <tr>
 
@@ -362,7 +361,7 @@
                                         <td></td>
                                         <td></td>
                                         <th colspan="3" style="width: fit-content;">Total Kewajiban</th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp404.914.955</th>
+                                        <th style="width: fit-content;font-weight: normal;text-align: right;">Rp404.914.955</th>
                                     </tr>
 
                                     <tr>
@@ -395,7 +394,7 @@
                                         <th style="height: 30px;font-weight: normal;"></th>
                                         <th colspan="2" style="width: fit-content;">Total Asset Lengkap</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp 424.492.335</th>
+                                        <th style="width: fit-content;font-weight: normal;text-align: right;">Rp 424.492.335</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
                                         <th colspan="5" style="width: fit-content;">EKUITAS</th>
                                     </tr>
@@ -412,7 +411,7 @@
                                         <th style="width: fit-content;font-weight: normal;">Modal</th>
                                         <th style="width: fit-content;font-weight: normal;">K</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp 1.959.414.213</th>
+                                        <th style="width: fit-content;font-weight: normal;text-align: right;">Rp 1.959.414.213</th>
                                     </tr>
 
                                     <tr>
@@ -427,7 +426,7 @@
                                         <th style="width: fit-content;font-weight: normal;">Deviden</th>
                                         <th style="width: fit-content;font-weight: normal;">D</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp 0</th>
+                                        <th style="width: fit-content;font-weight: normal;text-align: right;">Rp 0</th>
                                     </tr>
                                     <tr>
                                         <th style="height: 30px ;font-weight: normal;"></th>
@@ -441,7 +440,7 @@
                                         <th style="width: fit-content;font-weight: normal;">Laba Ditahan</th>
                                         <th style="width: fit-content;font-weight: normal;">K</th>
                                         <th style="width: fit-content;font-weight: normal;"></th>
-                                        <th style="width: fit-content;font-weight: normal;">Rp 98.411.955</th>
+                                        <th style="width: fit-content;font-weight: normal;text-align: right;">Rp 98.411.955</th>
                                     </tr>
                                     <tr>
                                         <td></td>
@@ -522,19 +521,49 @@
         document.getElementById('printBtn').addEventListener('click', function () {
             var element = document.getElementById('tabel neraca');
             var win = window.open('', '', 'height=700,width=700');
-            win.document.write('<html><head><title>Cetak Tabel Neraca</title>');
-            // Menambahkan CSS untuk border tabel
+            win.document.write('<html><title>Cetak Laporan Neraca</title><head>');
+
+            // CSS untuk border tabel
             win.document.write('<style>');
             win.document.write('table { border-collapse: collapse; width: 100%; }');
             win.document.write('th, td { border: 1px solid black; padding: 8px; text-align: left; }');
             win.document.write('th { background-color: #f2f2f2; }'); // Warna latar belakang untuk header
             win.document.write('h2 { text-align: center; }'); // Center the title
+            win.document.write('img { display: block; margin: 0 auto; }'); // Center the image
             win.document.write('</style>');
             win.document.write('</head><body>');
 
-            // Include title in the printed document
-            win.document.write('<h2>Laporan Posisi Keuangan</h2>'); // Title for the printed document
+            // kop surat
+            win.document.write('<table width="100%">');
+            win.document.write('<tr>');
+            win.document.write('<td style="text-align: center; border:none;"><img src="logo_baru.png" width="100" alt="Logo"></td>'); // Ganti dengan jalur gambar yang sesuai
+            win.document.write('<td style="text-align: center; border:none;"><h2>Laporan Neraca</h2></td>');
+            win.document.write('<td style="text-align: center; border:none;"><h4>Periode Tahun 2024</h4></td>');
+            win.document.write('</tr>');
+            win.document.write('</table>');
+            win.document.write('<hr>'); // Garis pemisah antara kop surat dan tabel
+
             win.document.write(element.outerHTML);
+
+            // footer
+            win.document.write('<div class="footer">');
+            win.document.write('<table width="100%">');
+            win.document.write('<tr style="border:none">');
+            win.document.write('<td style="text-align: center; width: 50%; border:none">');
+            win.document.write('<p>Manajer</p>');
+            win.document.write('<br><br><br>'); // Ruang untuk tanda tangan
+            win.document.write('<p>(Nama Manajer)</p>'); // Ganti dengan nama Manajer
+            win.document.write('</td>');
+            win.document.write('<p style="text-align: right">Yogyakarta, 10 Januari 2025</p>');
+            win.document.write('<td style="text-align: center; width: 50%; border:none">');
+            win.document.write('<p> Keuangan TvMu</p>');
+            win.document.write('<br><br><br>'); // Ruang untuk tanda tangan
+            win.document.write('<p>(Nama Keuangan TvMu)</p>'); // Ganti dengan nama Keuangan
+            win.document.write('</td>');
+            win.document.write('</tr>');
+            win.document.write('</table>');
+            win.document.write('</div>');
+
             win.document.write('</body></html>');
             win.document.close();
             win.print();
