@@ -179,12 +179,13 @@
               <p>Nominal&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: Rp 124.000</p>
               <!-- Button -->
               <div class="text-right d-flex justify-content-end py-4">
-                <!-- Modal Tambah Akun -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#largeModal">
-                  Tambah Jurnal
+                <!-- Modal Tambah Akun 1 -->
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal" style=" margin-right: 10px">
+                  Tambah Jurnal (1)
                 </button>
-                <div class="modal fade" id="largeModal" tabindex="-1">
-                  <div class="modal-dialog modal-lg">
+                <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+                  <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title">Tambah Jurnal</h5>
@@ -192,15 +193,15 @@
                       </div>
                       <div class="modal-body">
                         <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label">Transaksi / Keterangan</label>
-                          <div class="col-sm-10">
+                          <label class="col-sm-2 pt-0 col-form-label">Transaksi / Keterangan</label>
+                          <div class="col-sm-9">
                             <input type="text" class="form-control" value="Pembelian Makan dan Minum 31 Desember 2023"
                               disabled>
                           </div>
                         </div>
                         <div class="row mb-3">
                           <legend class="col-form-label col-sm-2 pt-0">Kode Jurnal</legend>
-                          <div class="col-sm-10">
+                          <div class="col-sm-9">
                             <fieldset class="row mb-3">
                               <div class="col-sm-5">
                                 <div class="form-check1">
@@ -243,7 +244,7 @@
                         </div>
                         <div class="row mb-3">
                           <label for="kode_akun" class="col-sm-2 col-form-label">Kode Akun</label>
-                          <div class="col-sm-10">
+                          <div class="col-sm-9">
                             <select class="form-control" id="nama_akun" name="nama_akun" required>
                               <!-- options will be populated here -->
                               <option selected> Pilih Kode Akun</option>
@@ -289,7 +290,7 @@
                         </div>
                         <div class="row mb-3">
                           <label for="arus_kas" class="col-sm-2 col-form-label">Arus Kas</label>
-                          <div class="col-sm-10">
+                          <div class="col-sm-9">
                             <select class="form-control" id="arus_kas" name="arus_kas" required>
                               <option selected>Pilih Arus Kas</option>
                               <option value="Operasi"> Operasi</option>
@@ -302,7 +303,7 @@
                         </div>
                         <div class="row mb-3">
                           <legend class="col-form-label col-sm-2 pt-0">Saldo Normal</legend>
-                          <div class="col-sm-10">
+                          <div class="col-sm-9">
                             <fieldset class="row mb-3">
                               <div class="col-sm-5">
                                 <div class="form-check2">
@@ -327,21 +328,229 @@
                               Nominal
                             </label>
                             <input type="number" class="form-control" id="angka" name="angka" required>
-                            <label class="form-check-label" for="gridRadios2">
-                              Terbilang
-                            </label>
                             <div id="huruf"></div>
                           </div>
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button a href="detail_jurnal.html" type="button" class="btn btn-primary">Submit</button>
+                        <a href="detail_jurnal.html"><button type="button" class="btn btn-primary">Submit</button></a>
                       </div>
                     </div>
                   </div>
-                </div><!-- End Modal Tambah Akun-->
+                </div><!-- End Modal Tambah Akun 1-->
+
+                <!-- Modal Tambah Akun 2-->
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal1">
+                  Tambah Jurnal (2)
+                </button>
+                 <div class="modal fade" id="ExtralargeModal1" tabindex="-1">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Tambah Jurnal 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row mb-3">
+                          <label class="col-sm-3 pt-0 col-form-label">Transaksi / Keterangan</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" value="Pembelian Makan dan Minum 31 Desember 2023"
+                              disabled>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <legend class="col-form-label col-sm-3 pt-0">Kode Jurnal</legend>
+                          <div class="col-sm-9">
+                            <fieldset class="row mb-3">
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6" checked>
+                                  <label class="form-check-label1">
+                                    JU
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6">
+                                  <label class="form-check-label">
+                                    AJP
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6">
+                                  <label class="form-check-label">
+                                    JP
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-check1">
+                                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios6"
+                                    value="option6">
+                                  <label class="form-check-label">
+                                    JB
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div><hr>
+                        </div>
+
+
+                        <!-- Debit -->
+                        <!--h4 style="text-align: left;">Debit</h4>
+                        <h4 style="text-align: right;">Kredit</h4-->
+
+                        <form class="row g-3">
+                        <h5>Debit &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Kredit</h5>
+                        <div class="col-md-6">
+
+                        <label for="kode_akun" class="form-label">Kode Akun</label>
+                                              <select class="form-control" id="nama_akun" name="nama_akun" required>
+                              <!-- options will be populated here -->
+                              <option selected> Pilih Kode Akun</option>
+                              <option value="kas">100001 - Kas</option>
+                              <option value="kasbank">100002 - Kas Bank</option>
+                              <option value="investasi">100003 - Investasi</option>
+                              <option value="piutang">100100 - Piutang Klien</option>
+                              <option value="perlengkapan habis pakai">100200 - Perlengkapan habis pakai</option>
+                              <option value="peralatan produksi">100500 - Peralatan produksi</option>
+                              <option value="akumulasi depresiasi perlatan produksi">100510 - Akumulasi depresiasi
+                                perlatan produksi</option>
+                              <option value="tanah">100600 - Tanah</option>
+                              <option value="kendaraan">100700 - Kendaraan</option>
+                              <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi depresiasi kendaraan
+                              </option>
+                              <option value="utang usaha">200100 - Utang usaha</option>
+                              <option value="utang gaji">200200 - Utang Gaji</option>
+                              <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima dimuka</option>
+                              <option value="utang bank">200400 - Utang Bank</option>
+                              <option value="modal">300100 - Modal</option>
+                              <option value="deviden">300200 - Deviden</option>
+                              <option value="laba ditahan">300500 - Laba ditahan</option>
+                              <option value="pendapatan project">400100 - Pendapatan Project</option>
+                              <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain</option>
+                              <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR dan Honorarium
+                              </option>
+                              <option value="beban pemasaran">500002 - Beban Pemasaran</option>
+                              <option value="beban konsumsi">500003 - Beban Konsumsi </option>
+                              <option value="beban operasional projek">500004 - Beban Operasional Project</option>
+                              <option value="beban sewa">500005 - Beban Sewa</option>
+                              <option value="beban utilitas">500006 - Beban Utilitas</option>
+                              <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
+                              <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
+                              <option value="beban penyusutan peralatan produksi">500009 - Beban Penyusutan Peralatan
+                                Produksi</option>
+                              <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan Kendaraan</option>
+                              <option value="beban administrasi">500011 - Beban Administrasi</option>
+                              <option value="beban sosial">500012 - Beban Sosial</option>
+                              <option value="beban lain-lain">500013 - Beban Lain-lain</option>
+                              <option value="beban pajak">500014 - Beban Pajak</option>
+                            </select>
+                </div>
+
+                
+                        <div class="col-md-6">
+                        <label for="kode_akun" class="form-label">Kode Akun</label>
+                                              <select class="form-control" id="nama_akun" name="nama_akun" required>
+                              <!-- options will be populated here -->
+                              <option selected> Pilih Kode Akun</option>
+                              <option value="kas">100001 - Kas</option>
+                              <option value="kasbank">100002 - Kas Bank</option>
+                              <option value="investasi">100003 - Investasi</option>
+                              <option value="piutang">100100 - Piutang Klien</option>
+                              <option value="perlengkapan habis pakai">100200 - Perlengkapan habis pakai</option>
+                              <option value="peralatan produksi">100500 - Peralatan produksi</option>
+                              <option value="akumulasi depresiasi perlatan produksi">100510 - Akumulasi depresiasi
+                                perlatan produksi</option>
+                              <option value="tanah">100600 - Tanah</option>
+                              <option value="kendaraan">100700 - Kendaraan</option>
+                              <option value="akumulasi depresiasi kendaraan">100710 - Akumulasi depresiasi kendaraan
+                              </option>
+                              <option value="utang usaha">200100 - Utang usaha</option>
+                              <option value="utang gaji">200200 - Utang Gaji</option>
+                              <option value="pendapatan diterima dimuka">200300 - Pendapatan diterima dimuka</option>
+                              <option value="utang bank">200400 - Utang Bank</option>
+                              <option value="modal">300100 - Modal</option>
+                              <option value="deviden">300200 - Deviden</option>
+                              <option value="laba ditahan">300500 - Laba ditahan</option>
+                              <option value="pendapatan project">400100 - Pendapatan Project</option>
+                              <option value="pendapatan lain-lain">400200 - Pendapatan Lain-lain</option>
+                              <option value="beban gaji,THR,dan honorarium">500001 - Beban gaji, THR dan Honorarium
+                              </option>
+                              <option value="beban pemasaran">500002 - Beban Pemasaran</option>
+                              <option value="beban konsumsi">500003 - Beban Konsumsi </option>
+                              <option value="beban operasional projek">500004 - Beban Operasional Project</option>
+                              <option value="beban sewa">500005 - Beban Sewa</option>
+                              <option value="beban utilitas">500006 - Beban Utilitas</option>
+                              <option value="beban perlengkapan">500007 - Beban Perlengkapan</option>
+                              <option value="beban pemeliharaan">500008 - Beban Pemeliharaan</option>
+                              <option value="beban penyusutan peralatan produksi">500009 - Beban Penyusutan Peralatan
+                                Produksi</option>
+                              <option value="beban penyusutan kendaraan">500010 - Beban Penyusutan Kendaraan</option>
+                              <option value="beban administrasi">500011 - Beban Administrasi</option>
+                              <option value="beban sosial">500012 - Beban Sosial</option>
+                              <option value="beban lain-lain">500013 - Beban Lain-lain</option>
+                              <option value="beban pajak">500014 - Beban Pajak</option>
+                            </select>
+                </div>
+                <div class="col-md-6">
+                          <label for="arus_kas" class="form-label">Arus Kas</label>
+                            <select class="form-control" id="arus_kas" name="arus_kas" required>
+                              <option selected>Pilih Arus Kas</option>
+                              <option value="Operasi"> Operasi</option>
+                              <option value="Investasi"> Investasi</option>
+                              <option value="Pendanaan"> Pendanaan</option>
+                              <option value="Masuk"> Kas Masuk</option>
+                              <option value="Keluar">Kas Keluar</option>
+                            </select>
+                          </div>
+
+
+                <div class="col-md-6">
+                          <label for="arus_kas" class="form-label">Arus Kas</label>
+                            <select class="form-control" id="arus_kas" name="arus_kas" required>
+                              <option selected>Pilih Arus Kas</option>
+                              <option value="Operasi"> Operasi</option>
+                              <option value="Investasi"> Investasi</option>
+                              <option value="Pendanaan"> Pendanaan</option>
+                              <option value="Masuk"> Kas Masuk</option>
+                              <option value="Keluar">Kas Keluar</option>
+                            </select>
+                          </div>
+
+                   <div class="col-md-6">
+                  <label class="form-label">
+                              Nominal
+                            </label>
+                            <input type="number" class="form-control" id="angka" name="angka" required>
+                            <div id="huruf"></div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">
+                              Nominal
+                            </label>
+                            <input type="number" class="form-control" id="angka" name="angka" required>
+                            <div id="huruf"></div>
+                </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="detail_jurnal.html"><button type="button" class="btn btn-primary">Submit</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Modal Tambah Akun2-->
               </div>
 
+
+                      
               <!-- Table with stripped rows -->
               <table class="table table-bordered">
                 <thead>
@@ -360,7 +569,7 @@
                     <td>500003</td>
                     <td>Beban Konsumsi</td>
                     <td class="text-center"> - </td>
-                    <td>Rp.124.000</td>
+                    <td style="text-align: right; border: none;">Rp.124.000</td>
                     <td class="text-center"> - </td>
                   </tr>
 
@@ -370,12 +579,32 @@
                     <td>Kas</td>
                     <td>Operasi</td>
                     <td class="text-center"> - </td>
-                    <td>Rp.124.000</td>
+                    <td style="text-align: right; border: none;">Rp.124.000</td>
                 </tbody>
               </table>
+
+              <!-- Pop Up Modal -->
               <div class="text-right d-flex justify-content-end py-4">
-                 <a href="bukubesar.html"> <button type="submit" class="btn btn-success mb-3" style="margin-right: 10px;"> Simpan </button></a>
-            </div>
+              <button type="button" class="btn btn-success" style="margin-right: 10px;" data-bs-toggle="modal" data-bs-target="#verticalycentered">
+                  Simpan
+                </button>
+              </div>
+              <div class="modal fade" id="verticalycentered" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-danger">Warning Data Imbalance</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Peringatan data tidak seimbang! Silahkan periksa data anda kembali
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Pop Up Modal-->
             </div>
           </div><!-- End Default Card -->
 
