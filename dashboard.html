@@ -175,7 +175,7 @@
               <div class="card info-card sales-card">
 
                 <div class="card-body">
-                  <h5 class="card-title">Kas Di Tangan<span>| 09 Januari 2025</span></h5>
+                  <h5 class="card-title">Kas Di Tangan <span>| 13 Januari 2025</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -197,7 +197,7 @@
               <div class="card info-card customers-card">
 
                 <div class="card-body">
-                  <h5 class="card-title">Kas di Bank <span>| 09 Januari 2025</span></h5>
+                  <h5 class="card-title">Kas Di Bank <span>| 13 Januari 2025</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -219,7 +219,7 @@
               <div class="card info-card revenue-card">
 
                 <div class="card-body">
-                  <h5 class="card-title">Piutang <span>| 09 Januari 2025</span></h5>
+                  <h5 class="card-title">Piutang <span>| 13 Januari 2025</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -242,7 +242,7 @@
               <div class="card info-card deviden-card">
 
                 <div class="card-body">
-                  <h5 class="card-title">Total Kewajiban <span>| 09 Januari 2025</span></h5>
+                  <h5 class="card-title">Total Kewajiban <span>| 13 Januari 2025</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -263,10 +263,10 @@
               <!-- Investasi -->
             <div class="col-xxl-4 col-xl-6">
 
-              <div class="card info-card customers-card">
+              <div class="card info-card revenue-card">
 
                 <div class="card-body">
-                  <h5 class="card-title">Total Biaya <span>| 09 Januari 2025</span></h5>
+                  <h5 class="card-title">Total Biaya <span>| 13 Januari 2025</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -287,10 +287,10 @@
             <!-- Pendapatan Lain - Lain -->
             <div class="col-xxl-4 col-xl-6">
 
-              <div class="card info-card deviden-card">
+              <div class="card info-card sales-card">
 
                 <div class="card-body">
-                  <h5 class="card-title"> Pendapatan Project <span>| 09 Januari 2025</span></h5>
+                  <h5 class="card-title"> Pendapatan Project <span>| 13 Januari 2025</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -388,7 +388,7 @@
               <div class="card">
 
                 <div class="card-body">
-                  <h5 class="card-title"> Grafik <span></span></h5>
+                  <h5 class="card-title"> Grafik Tahun 2024 - 2025 <span></span></h5>
 
                   <!-- Line Chart -->
                   <div id="reportsChart"></div>
@@ -397,15 +397,24 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [ {
-        name: 'Pendapatan Diterima Dimuka',
-        data: [475000000, 521000000, 500000000, 540000000, 584000000, 600000000, 625000000, 650000000, 700000000, 745268000]
+        name: 'Kas Di Tangan ',
+        data: [475000000, 521000000, 500000000, 540000000, 584000000, 600000000, 625000000, 650000000, 700000000, 745268000, 354187621, 123093373]
        }, {
-        name: 'Pendapatan Project  ',
-        data: [298000000, 333444000, 364000000, 371000000, 451000000, 421000000, 475000000, 500457000, 535124000, 578000000]
+        name: 'Kas Di Bank  ',
+        data: [298000000, 333444000, 364000000, 371000000, 451000000, 421000000, 475000000, 500457000, 535124000, 578000000,654758910, 728234000]
        },{
-        name: 'Pendapatan Lain - Lain',
-        data: [397458000, 438000000, 478000000, 565457000, 491000000, 517450000, 545000000, 584000000, 542000000, 647000000]
-      }],
+        name: 'Piutang ',
+        data: [397458000, 438000000, 478000000, 565457000, 491000000, 517450000, 545000000, 584000000, 542000000, 647000000, 658472165, 325417896]
+      },{
+        name: 'Total Kewajiban ',
+        data: [325400124, 452150001, 321587100, 521475200, 652102012, 541250123, 412548201, 532012548, 532000000,594000021, 514720032, 554721000]
+      },{
+        name: 'Total Biaya  ',
+        data: [333444000, 451000000, 364000000, 371000000, 298000000, 475000000, 500457000, 535124000,421000000, 578000000, 412001200, 514269850]
+       },{
+        name: 'Pendapatan Project ',
+        data: [325000000, 651000000, 542000000, 540000000, 415000000, 658700000, 625000000, 412000000, 654000000, 658268000, 652140002, 541236980]
+       }],
                         chart: {
                           height: 350,
                           type: 'area',
@@ -416,7 +425,7 @@
                         markers: {
                           size: 4
                         },
-                        colors: ['#00E396', '#FFDA89', '#FF69B4'],
+                        colors: ['#00E396', '#FFDA89', '#FF69B4', '#00BFFF', '#8B658B', '#FF8247'],
                         fill: {
                           type: "gradient",
                           gradient: {
@@ -434,7 +443,8 @@
                           width: 2
                         },
                         xaxis: {
-                          categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
+                          categories: ['Feb 2024', 'Mar 2024', 'Apr 2024', 'May 2024', 'Jun 2024', 'Jul 2024', 'Aug 2024', 'Sep 2024', 'Oct 2024',
+                           'Nov 2024','Dec 2024', 'Jan 2025'],
                         },
                         yaxis:{
                           labels: {
