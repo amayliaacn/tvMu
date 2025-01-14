@@ -370,6 +370,9 @@
         document.getElementById('printBtn').addEventListener('click', function () {
             var element = document.getElementById('tabel labarugi');
             var win = window.open('', '', 'height=700,width=700');
+            var today = new Date();
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = today.toLocaleDateString('id-ID', options);
             win.document.write('<html><title>Cetak Laporan Laba Rugi</title><head>');
 
             // CSS untuk border tabel
@@ -403,7 +406,7 @@
             win.document.write('<br><br><br>'); // Ruang untuk tanda tangan
             win.document.write('<p>(Nama Manajer)</p>'); // Ganti dengan nama kepala bidang
             win.document.write('</td>');
-            win.document.write('<p style="text-align: right">Yogyakarta, 10 Januari 2025</p>');
+            win.document.write('<p style="text-align: right">'+'Yogyakarta, ' + formattedDate + '</p>');
             win.document.write('<td style="text-align: center; width: 50%; border:none">');
             win.document.write('<p> Keuangan TvMu</p>');
             win.document.write('<br><br><br>'); // Ruang untuk tanda tangan
